@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Membership</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <header>
 <section class='logo'>
@@ -29,11 +32,12 @@
 <a href="contact.php">Contact</a>
 <a href="about.php">About Us</a>
 </div>
+</header>    
+<body>
+  
 <section class='mainTitle'>
 <h1>Current Membership</h1>
 </section>
-</header>    
-<body>
  <section class="currentMembershipDescription">
     <section class="desp1">
         <section class='content'>

@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Certification</title>
+    
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <header>
 <section class='logo'>
@@ -29,11 +33,12 @@
 <a href="contact.php">Contact</a>
 <a href="about.php">About Us</a>
 </div>
-<section class='mainTitle'>
-<h1>Current Membership</h1>
-</section>
 </header>    
 <body>
+  
+<section class='mainTitle'>
+<h1>Certification / Recertification</h1>
+</section>
  <section class="currentMembershipDescription">
     <section class="desp1">
         <section class='content'>
@@ -55,20 +60,19 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
           ntur?</p>
         </section>
-        <img src="./images/" alt="">
+        <img src="./images/" alt="img">
     </section>
 </section>
 </body>
 
 <footer>
 <section class="footerNav">
-    
-     <section class="Copyright"> something</section>
+     <section class="Copyright">Copyrights</section>
      <section class="socialMedia">
-    <a href=""><img src="./images/facebook" alt=""></a>
-    <a href=""><img src="./images/twitter" alt=""></a>
-    <a href=""><img src="./images/youtube" alt=""></a>
-    <a href=""><img src="./images/instagram" alt=""></a>
+    <a href=""><img src="./images/facebook" alt="fb"></a>
+    <a href=""><img src="./images/twitter" alt="twitter"></a>
+    <a href=""><img src="./images/youtube" alt="yt"></a>
+    <a href=""><img src="./images/instagram" alt="insta"></a>
     
      </section>
 

@@ -1,0 +1,22 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Quicksand', Arial, sans-serif;
+    margin-top: 40px;
+}
+
+#nav {
+   
+    display: flex;
+    flex-direction: row;
+}
+
+a {
+    text-decoration: none;
+     margin-right: 20px;
+  }
+
+  .logo {
+      margin-right: 200px;
+  }

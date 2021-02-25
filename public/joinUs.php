@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Join us</title>
+    
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <header>
 <section class='logo'>
@@ -12,12 +16,12 @@
 </section>
 
 <div class='nav'>
-<a href="#">Home</a>
+<a href="index.php">Home</a>
 <div class="dropdown">
   <button class="dropbtn">Membership</button>
   <div class="dropdown-content">
     <a href="membership.php">Current Membership</a>
-    <a href="joinUs.php">Join us</a>
+    <a href="#">Join us</a>
     <a href="committee.php">Committee</a>
     <a href="certification.php">Certification</a>
     <a href="skill.php">Skill Building</a>
@@ -29,12 +33,14 @@
 <a href="contact.php">Contact</a>
 <a href="about.php">About Us</a>
 </div>
-<section class='mainTitle'>
-<h1>Current Membership</h1>
-</section>
 </header>    
 <body>
+  
+<section class='mainTitle'>
+<h1>Join Us</h1>
+</section>
 <form action="form.php" method="get">
+  <section class="formContainer">
 <section class="formSection1">
      <label for="firstname"></label>
         <input type="text" name="firstname" placeholder="firstname">
@@ -61,11 +67,11 @@
 
     </section>
 
-    <section class="formSection1">
+    <section class="formSection2">
      <label for="address"></label>
         <input type="text" name="homeaddress" placeholder="Home address">
 
-<section class="formSection2">
+<section class="formSection3">
     <label for="city"></label>
     <input type="text" name="city" placeholder="City">
   <label for="zip"></label>
@@ -93,6 +99,7 @@
     <label for="reference"></label>
     <input type="text" name="reference" placeholder="Reference(optional)">
 
+    </section>
     </section>
 <section class="conditions">
         <section class="set1">
@@ -123,23 +130,23 @@
             </section>
         </section>
    </section>
-
+<section class="submitButton">
    <p>I have read and understand the information above and I acknowledge as an official of LRG assigned games I am not an employee but I provide my services on a freelance basis</p>
         
         
         <button type="submit" name="submit">Join</button>
+        </section>
     </form>
 </body>
 
 <footer>
 <section class="footerNav">
-    
-     <section class="Copyright"> something</section>
+     <section class="Copyright">Copyrights</section>
      <section class="socialMedia">
-    <a href=""><img src="./images/facebook" alt=""></a>
-    <a href=""><img src="./images/twitter" alt=""></a>
-    <a href=""><img src="./images/youtube" alt=""></a>
-    <a href=""><img src="./images/instagram" alt=""></a>
+    <a href=""><img src="./images/facebook" alt="fb"></a>
+    <a href=""><img src="./images/twitter" alt="twitter"></a>
+    <a href=""><img src="./images/youtube" alt="yt"></a>
+    <a href=""><img src="./images/instagram" alt="insta"></a>
     
      </section>
 
