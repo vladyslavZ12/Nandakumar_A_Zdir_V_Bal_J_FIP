@@ -22,12 +22,16 @@
   <div class="dropdown-content">
     <a href="membership.php">Current Membership</a>
     <a href="joinUs.php">Join us</a>
-    <a href="#">Committee</a>
+    <a href="committee.php">Committee</a>
     <a href="certification.php">Certification</a>
-    <a href="skill.php">Skill Building</a>
+    <a href="#">Skill Building</a>
     <a href="gallery.php">Gallery</a>
   </div>
 </div>
+<a href="partners.php">Partners</a>
+<a href="programs.php">Programs</a>
+<a href="contact.php">Contact</a>
+<a href="about.php">About Us</a>
 </div>
 </header>    
 <body>
