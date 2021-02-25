@@ -1,23 +1,44 @@
-<?php 
-    $db_dsn = array( 
-        'host' => 'localhost',
-        'dbname' => '',
-        'charset' => 'utf8'
-    );
+<?php
+class Database
+{
+    private $host = "localhost";
+  private $db_name = "fip";
+    private $username = "root";
+    private $password = "";
+    private static $instance = null;
 
-    $dsn = 'mysql:'.http_build_query($db_dsn, '', ';');
+    public $conn;
+    private function __construct()
+    {
+        $db_dsn = array(
+            'host'    => $this->host,
+            'dbname'  => $this->db_name,
+            'charset' => 'utf8',
+        );
 
-    //This is the DB credentials
-
-    $db_user = 'root';
-    $db_pass = ''; // windows users leave this blank
-
-    try{
-        $pdo = new PDO($dsn, $db_user, $db_pass);
-        // var_dump($pdo);
-        // echo (in this case) is almost like console.log
-        // echo "you're in! enjoy the show";
-    } catch (PDOException $exception){
-        echo 'Connection Error:'.$exception->getMessage();
-        exit();
+        try {
+            $dsn = 'mysql:' . http_build_query($db_dsn, '', ';');
+            $this->conn = new PDO($dsn, $this->username, $this->password);
+        } catch (PDOException $exception) {
+            echo json_encode(
+                array(
+                    'error'   => 'Database connection failed',
+                    'message' => $exception->getMessage(),
+                )
+            );
+            exit;
+        }
     }
+    public static function getInstance()
+    {
+        if (!self::$instance) {
+            self::$instance = new Database();
+        }
+
+        return self::$instance;
+    }
+    public function getConnection()
+    {
+        return $this->conn;
+    }
+}

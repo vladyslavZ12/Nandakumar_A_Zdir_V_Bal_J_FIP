@@ -18,7 +18,7 @@
 </section>
 
 <div class='nav'>
-<a href="#">Home</a>
+<a href="index.php">Home</a>
 <div class="dropdown">
   <button class="dropbtn">Membership</button>
   <div class="dropdown-content">
@@ -27,7 +27,7 @@
     <a href="committee.php">Committee</a>
     <a href="certification.php">Certification</a>
     <a href="skill.php">Skill Building</a>
-    <a href="gallery.php">Gallery</a>
+    <a href="#">Gallery</a>
   </div>
 </div>
 <a href="partners.php">Partners</a>
@@ -42,31 +42,22 @@
 <h1>Gallery</h1>
 </section>
 <main id="app1">
-    <section class="projectTitle">
-    <h1 @click="clickHeader">{{ message }}</h1>
-    <p>{{anotherMessage}}</p>
-</section>
 <section class="projectSection">
-    <mini-card v-for="mini in miniCars"  data-offset = 0 @showmydata='showMiniData' :mini="mini" :key="mini.id" class="miniImages"></mini-card>
-   
-</section>
-<section class="bio-data" :class="{'show-lightbox' : showMiniData}" class="descrip">
-   <span class="close-button">X</span>
-    <h2>Project: {{ currentMiniData.name }}</h2>
-    <p>Description: {{ currentMiniData.description}}</p>
+   <!-- <gall-card v-for=" in gall"  data-offset = 0 @showmydata='showData' :i="" :key=".id" class="Images"></gall-card>
+-->
 </section>
 </main>
 </body>
 
+
 <footer>
 <section class="footerNav">
-    
-     <section class="Copyright"> something</section>
+     <section class="Copyright">Copyrights</section>
      <section class="socialMedia">
-    <a href=""><img src="./images/facebook" alt=""></a>
-    <a href=""><img src="./images/twitter" alt=""></a>
-    <a href=""><img src="./images/youtube" alt=""></a>
-    <a href=""><img src="./images/instagram" alt=""></a>
+    <a href=""><img src="./images/facebook" alt="fb"></a>
+    <a href=""><img src="./images/twitter" alt="twitter"></a>
+    <a href=""><img src="./images/youtube" alt="yt"></a>
+    <a href=""><img src="./images/instagram" alt="insta"></a>
     
      </section>
 
