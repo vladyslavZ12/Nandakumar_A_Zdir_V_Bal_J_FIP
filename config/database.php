@@ -2,7 +2,7 @@
 class Database
 {
     private $host = "localhost";
-  private $db_name = "fip";
+  private $db_name = "lrg";
     private $username = "root";
     private $password = "";
     private static $instance = null;

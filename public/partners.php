@@ -43,12 +43,12 @@
 <footer>
 <section class="footerNav">
     
-     <section class="Copyright"> something</section>
+     <section class="Copyright">copyright</section>
      <section class="socialMedia">
-    <a href=""><img src="./images/facebook" alt=""></a>
-    <a href=""><img src="./images/twitter" alt=""></a>
-    <a href=""><img src="./images/youtube" alt=""></a>
-    <a href=""><img src="./images/instagram" alt=""></a>
+    <a href=""><img src="../images/facebook.svg" width = "40px" height = "40px"alt=""></a>
+    <a href=""><img src="../images/twitter.svg"  width = "40px" height = "40px" alt=""></a>
+    <a href=""><img src="../images/youtube.svg"  width = "40px" height = "40px" alt=""></a>
+    <a href=""><img src="../images/instagram.svg"  width = "40px" height = "40px" alt=""></a>
     
      </section>
 
