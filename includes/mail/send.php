@@ -44,7 +44,7 @@ $results['comment'] = $user_comment;
 
 // Email preparation
 $email_subj = 'Contact Form';
-$email_recipient = 'ashwinakx12@gmail.com';
+$email_recipient = 'donotreply@gmail.com';
 $email_msg = sprintf('Name: %s, Email: %s, Message: %s', $user_name, $user_email, $user_comment);
 
 $email_headers = array(
@@ -55,7 +55,7 @@ $email_headers = array(
 
 $email_status = mail($email_recipient, $email_subj, $email_msg, $email_headers);
 if($email_status){
-    $results['comment'] = sprintf('Thank you for contacting ashwin. you will recieve an automated reply', $user_name);
+    $results['comment'] = sprintf('Thank you for contacting Lrg. you will recieve an automated reply', $user_name);
 }
 
 else {
