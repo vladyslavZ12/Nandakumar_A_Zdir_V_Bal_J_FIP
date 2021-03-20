@@ -15,11 +15,11 @@
 </section>
 
 <div class='nav'>
-<a href="#">Home</a>
+<a href="index.php">Home</a>
 <div class="dropdown">
   <button class="dropbtn">Membership</button>
   <div class="dropdown-content">
-    <a href="membership.php">Current Membership</a>
+    <a href="#">Current Membership</a>
     <a href="joinUs.php">Join us</a>
     <a href="committee.php">Committee</a>
     <a href="certification.php">Certification</a>

@@ -1,0 +1,26 @@
+{
+  "name": "nandakumar_a_zdir_v_bal_j_fip",
+  "version": "1.0.0",
+  "description": "chat",
+  "main": "index.js",
+  "scripts": {
+    "start-dev": "nodemon app",
+    "start-ui": " browser-sync start --proxy 'localhost:5050' --files 'index.php' 'admin'",
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladyslavZ12/Nandakumar_A_Zdir_V_Bal_J_FIP.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vladyslavZ12/Nandakumar_A_Zdir_V_Bal_J_FIP/issues"
+  },
+  "homepage": "https://github.com/vladyslavZ12/Nandakumar_A_Zdir_V_Bal_J_FIP#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "socket.io": "^4.0.0"
+  }
+}
