@@ -30,7 +30,7 @@
 <a href="partners.php">Partners</a>
 <a href="programs.php">Programs</a>
 <a href="contact.php">Contact</a>
-<a href="about.php">About Us</a>
+<a href="#">About Us</a>
 </div>
 </header>    
 <body>
@@ -47,10 +47,10 @@
     
      <section class="Copyright"> something</section>
      <section class="socialMedia">
-    <a href=""><img src="../images/facebook.svg"   width = "40px" height = "40px" alt=""></a>
-    <a href=""><img src="../images/twitter.svg"   width = "40px" height = "40px" alt=""></a>
-    <a href=""><img src="../images/youtube.svg"   width = "40px" height = "40px" alt=""></a>
-    <a href=""><img src="../images/instagram.svg"  width = "40px" height = "40px" alt=""></a>
+    <a href=""><img src="../images/facebook.svg"   width = "30px" height = "30px" alt=""></a>
+    <a href=""><img src="../images/twitter.svg"   width = "30px" height = "30px" alt=""></a>
+    <a href=""><img src="../images/youtube.svg"   width = "30px" height = "30px" alt=""></a>
+    <a href=""><img src="../images/instagram.svg"  width = "30px" height = "30px" alt=""></a>
     
      </section>
 

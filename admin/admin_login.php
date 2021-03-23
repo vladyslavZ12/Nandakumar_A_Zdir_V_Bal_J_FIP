@@ -1,5 +1,7 @@
 <?php 
 require_once '../load.php';
+echo '<link rel="stylesheet" href="main.css">';
+echo '<div class="errortext">';
 $ip = $_SERVER['REMOTE_ADDR'];
 
 if(isset($_SESSION['user_id'])){
@@ -15,12 +17,13 @@ if(isset($_POST['submit'])){
         $message = $result;
     }
     else {
-        $message ='';
+        echo '<p id="errormessage">Please fill up the form</p>';
     }
 
 }
-
+echo '</div>';
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -32,6 +35,11 @@ if(isset($_POST['submit'])){
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"></head>
 <body>
+<section class="loginLogo">
+<img src="../images/logo_2.svg" alt="">
+</section>
+
+<section class="form">
 <?php echo !empty($message)?$message:''; ?>
     <form action="admin_login.php" method="post">
     <label for="username"></label>
@@ -40,7 +48,8 @@ if(isset($_POST['submit'])){
     <label for="password"></label>
     <input id="password" type="password" name="password" placeholder="password">
     <br><br>
-        <button type="submit" name="submit">Login</button>
+        <button type="submit" name="submit" class="button">Login</button>
     </form>
+    </section>
 </body>
 </html>

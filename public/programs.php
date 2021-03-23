@@ -11,7 +11,7 @@
 </head>
 <header>
 <section class='logo'>
-<a href="#"><img src="./images/logo" alt="logo"></a>
+<a href="#"><img src="../images/logo.svg" alt="logo" width="100" height="100"></a>
 </section>
 
 <div class='nav'>
@@ -19,7 +19,7 @@
 <div class="dropdown">
   <button class="dropbtn">Membership</button>
   <div class="dropdown-content">
-    <a href="#">Current Membership</a>
+    <a href="membership.php">Current Membership</a>
     <a href="joinUs.php">Join us</a>
     <a href="committee.php">Committee</a>
     <a href="certification.php">Certification</a>
@@ -28,7 +28,7 @@
   </div>
 </div>
 <a href="partners.php">Partners</a>
-<a href="programs.php">Programs</a>
+<a href="#">Programs</a>
 <a href="contact.php">Contact</a>
 <a href="about.php">About Us</a>
 </div>
@@ -42,13 +42,12 @@
 
 <footer>
 <section class="footerNav">
-    
-     <section class="Copyright"> something</section>
+     <section class="Copyright">Copyrights</section>
      <section class="socialMedia">
-    <a href=""><img src="./images/facebook" alt=""></a>
-    <a href=""><img src="./images/twitter" alt=""></a>
-    <a href=""><img src="./images/youtube" alt=""></a>
-    <a href=""><img src="./images/instagram" alt=""></a>
+     <a href=""><img src="../images/facebook.svg" width = "30px" height = "30px"alt=""></a>
+    <a href=""><img src="../images/twitter.svg"  width = "30px" height = "30px" alt=""></a>
+    <a href=""><img src="../images/youtube.svg"  width = "30px" height = "30px" alt=""></a>
+    <a href=""><img src="../images/instagram.svg"  width = "30px" height = "30px" alt=""></a>
     
      </section>
 
