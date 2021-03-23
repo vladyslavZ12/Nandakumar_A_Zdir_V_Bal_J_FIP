@@ -1,34 +1,33 @@
 export default {
-    name: "MiniCar",
+    name: "GalleryPics",
 
-    props: ["mini"],
+    props: ["gallery"],
 
     // data needs to be a function inside a component
     data: function() {
         return {
-            myName: this.mini.name,
-            myRole: this.mini.model,
-            program: "IDP"
+            myName: this.gallery.name,
+            program: "LRG"
         }
     },
 
     template: 
     `<li @click="logClicked">
-        <img :src="'images/' + mini.image" :alt='mini.name + " image"'>
+        <img :src="'../images/' + gallery.image" :alt='gallery.name + " image"'>
       
     </li>`,
     
     created: function () {
-        console.log(`created ${this.mini.name}'s card`);
+        console.log(`created ${this.gallery.name}'s card`);
         
     },
 
     methods: {
         logClicked() {
           
-            console.log(`fired from inside ${this.mini.name}'s component!`);
-            console.log(`${this.mini.description}`);
-            this.$emit('showmydata',this.mini);
+            console.log(`fired from inside ${this.gallery.name}'s component!`);
+            console.log(`${this.gallery.description}`);
+            this.$emit('showmydata',this.gallery);
 
         }
     }

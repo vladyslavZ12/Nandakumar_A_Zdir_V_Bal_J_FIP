@@ -11,7 +11,7 @@
 </head>
 <header>
 <section class='logo'>
-<a href="#"><img src="./images/logo" alt="logo"></a>
+<a href="#"><img src="../images/logo.svg" alt="logo" width="100" height="100"></a>
 </section>
 
 <div class='nav'>
@@ -30,7 +30,7 @@
 <a href="partners.php">Partners</a>
 <a href="programs.php">Programs</a>
 <a href="contact.php">Contact</a>
-<a href="about.php">About Us</a>
+<a href="about_us.php">About Us</a>
 </div>
 </header>    
 <body>
@@ -38,7 +38,7 @@
 <h1>Contact Us</h1>
 </section>
 
-<form action="./includes/mail/send.php" id="contactForm" method="post">
+<form action="../includes/mail/send.php" id="contactForm" method="post">
             <h2 class="hidden">Contact form</h2>
                 <label for="name">Name: (required)</label><br>
                 
@@ -65,12 +65,12 @@
 <footer>
 <section class="footerNav">
     
-     <section class="Copyright"> something</section>
+     <section class="Copyright">Copyright</section>
      <section class="socialMedia">
-    <a href=""><img src="../images/facebook.svg"  width = "40px" height = "40px" alt=""></a>
-    <a href=""><img src="../images/twitter.svg"  width = "40px" height = "40px" alt=""></a>
-    <a href=""><img src="../images/youtube.svg"  width = "40px" height = "40px" alt=""></a>
-    <a href=""><img src="../images/instagram.svg"  width = "40px" height = "40px" alt=""></a>
+    <a href=""><img src="../images/facebook.svg"  width = "30px" height = "30px" alt=""></a>
+    <a href=""><img src="../images/twitter.svg"  width = "30px" height = "30px" alt=""></a>
+    <a href=""><img src="../images/youtube.svg"  width = "30px" height = "30px" alt=""></a>
+    <a href=""><img src="../images/instagram.svg"  width = "30px" height = "30px" alt=""></a>
     
      </section>
 

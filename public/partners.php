@@ -11,7 +11,7 @@
 </head>
 <header>
 <section class='logo'>
-<a href="#"><img src="./images/logo" alt="logo"></a>
+<a href="#"><img src="../images/logo.svg" alt="logo" width="100" height="100"></a>
 </section>
 
 <div class='nav'>
@@ -45,10 +45,10 @@
     
      <section class="Copyright">copyright</section>
      <section class="socialMedia">
-    <a href=""><img src="../images/facebook.svg" width = "40px" height = "40px"alt=""></a>
-    <a href=""><img src="../images/twitter.svg"  width = "40px" height = "40px" alt=""></a>
-    <a href=""><img src="../images/youtube.svg"  width = "40px" height = "40px" alt=""></a>
-    <a href=""><img src="../images/instagram.svg"  width = "40px" height = "40px" alt=""></a>
+    <a href=""><img src="../images/facebook.svg" width = "30px" height = "30px"alt=""></a>
+    <a href=""><img src="../images/twitter.svg"  width = "30px" height = "30px" alt=""></a>
+    <a href=""><img src="../images/youtube.svg"  width = "30px" height = "30px" alt=""></a>
+    <a href=""><img src="../images/instagram.svg"  width = "30px" height = "30px" alt=""></a>
     
      </section>
 

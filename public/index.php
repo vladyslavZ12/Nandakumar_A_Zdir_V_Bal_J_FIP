@@ -11,7 +11,7 @@
 </head>
 <header>
 <section class="logo">
-<a href="#"><img src="./images/logo" alt="logo"></a>
+<a href="#"><img src="../images/logo.svg" alt="logo" width="100" height="100"></a>
 </section>
 
 <div class='nav'>
@@ -30,7 +30,7 @@
 <a href="partners.php">Partners</a>
 <a href="programs.php">Programs</a>
 <a href="contact.php">Contact</a>
-<a href="about.php">About Us</a>
+<a href="about_us.php">About Us</a>
 </header>    
 <body>
 
@@ -38,24 +38,24 @@
 <h1>London Refrees Group</h1>
 </section>
     <section class="mainImage">
-    <img src="./images/" alt="Hockey">
+    <img src="../images/alterna1.jpg" class="shadow" alt="Hockey">
     </section>
 
     <section class="subCategory">
         <section class="Set1">
-        <img src="./images/sknsad.pns" alt="image">
+        <img src="../images/home_line1.jpg" class="shadow"  alt="image">
         <p>Lorem ipsum dolor sit amet, 
         consectetur adipisicing elit. Offici</p>
         </section>
         
         <section class="Set1">
-        <img src="./images/asdas.pns" alt="image">
+        <img src="../images/home_line2.jpg" class="shadow" alt="image">
         <p>Lorem ipsum dolor sit amet, 
         consectetur adipisicing elit. Offici</p>
         </section>
         
         <section class="Set1">
-        <img src="./images/asdsad.ps" alt="image">
+        <img src="../images/home_line3.jpg" class="shadow" alt="image">
         <p>Lorem ipsum dolor sit amet, 
         consectetur adipisicing elit. Offici</p>
         </section>
@@ -69,7 +69,7 @@
 
              </section>
              <section class="detailsImages">
-                <img src="./images/some" alt="images">
+                <img src="../images/home_list1.jpg"  class="shadow" alt="images">
              </section>
         </section>
 
@@ -80,9 +80,54 @@
 
              </section>
              <section class="detailsImages">
-                <img src="./images/some" alt="images">
+                <img src="../images/home_list2.jpg"  class="shadow" alt="images">
              </section>
         </section>
+
+        <section class="detail1">
+             <section class="detailText">
+                <h2>Certificates</h2>
+                <p>again lorem ipsum here</p>
+
+             </section>
+             <section class="detailsImages">
+                <img src="../images/home_list3.jpg" class="shadow" alt="images">
+             </section>
+        </section>  
+
+        <section class="detail2">
+             <section class="detailText">
+                <h2>Commitment</h2>
+                <p>again lorem ipsum here</p>
+
+             </section>
+             <section class="detailsImages">
+                <img src="../images/home_list4.jpg" class="shadow" alt="images">
+             </section>
+        </section>
+
+        <section class="detail1">
+             <section class="detailText">
+                <h2>Communication skills</h2>
+                <p>again lorem ipsum here</p>
+
+             </section>
+             <section class="detailsImages">
+                <img src="../images/home_list5.jpg" class="shadow" alt="images">
+             </section>
+        </section>  
+
+        <section class="detail2">
+             <section class="detailText">
+                <h2>Social intelligence skills</h2>
+                <p>again lorem ipsum here</p>
+
+             </section>
+             <section class="detailsImages">
+                <img src="../images/home_list6.jpg" class="shadow" alt="images">
+             </section>
+        </section>
+
     </section>
 </body>
 
@@ -90,12 +135,11 @@
 <section class="footerNav">
      <section class="Copyright">Copyrights</section>
      <section class="socialMedia">
-    <a href=""><img src="./images/facebook" alt="fb"></a>
-    <a href=""><img src="./images/twitter" alt="twitter"></a>
-    <a href=""><img src="./images/youtube" alt="yt"></a>
-    <a href=""><img src="./images/instagram" alt="insta"></a>
-    
-     </section>
+    <a href=""><img src="../images/facebook.svg" width = "30px" height = "30px"  alt="fb"></a>
+    <a href=""><img src="../images/twitter.svg" width = "30px" height = "30px" alt="twitter"></a>
+    <a href=""><img src="../images/youtube.svg" width = "30px" height = "30px"  alt="yt"></a>
+    <a href=""><img src="../images/instagram.svg" width = "30px" height = "30px" alt="insta"></a>
+    </section>
 
 </section>
 </footer>

@@ -12,7 +12,7 @@
 </head>
 <header>
 <section class='logo'>
-<a href="#"><img src="./images/logo" alt="logo"></a>
+<a href="#"><img src="../images/logo.svg" alt="logo" width="100" height="100"></a>
 </section>
 
 <div class='nav'>
@@ -37,7 +37,7 @@
 <body>
   
 <section class='mainTitle'>
-<h1>Member Executive Committee</h1>
+<h1>Skill Building</h1>
 </section>
  <section class="currentMembershipDescription">
     
@@ -70,10 +70,10 @@
 <section class="footerNav">
      <section class="Copyright">Copyrights</section>
      <section class="socialMedia">
-    <a href=""><img src="./images/facebook" alt="fb"></a>
-    <a href=""><img src="./images/twitter" alt="twitter"></a>
-    <a href=""><img src="./images/youtube" alt="yt"></a>
-    <a href=""><img src="./images/instagram" alt="insta"></a>
+     <a href=""><img src="../images/facebook.svg" width = "30px" height = "30px"alt=""></a>
+    <a href=""><img src="../images/twitter.svg"  width = "30px" height = "30px" alt=""></a>
+    <a href=""><img src="../images/youtube.svg"  width = "30px" height = "30px" alt=""></a>
+    <a href=""><img src="../images/instagram.svg"  width = "30px" height = "30px" alt=""></a>
     
      </section>
 

@@ -10,11 +10,12 @@
     <title>Gallery</title>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
 <header>
 <section class='logo'>
-<a href="#"><img src="./images/logo" alt="logo"></a>
+<a href="#"><img src="../images/logo.svg" alt="logo" width="80" height="80"></a>
 </section>
 
 <div class='nav'>
@@ -43,26 +44,27 @@
 </section>
 <main id="app1">
 <section class="projectSection">
-   <!-- <gall-card v-for=" in gall"  data-offset = 0 @showmydata='showData' :i="" :key=".id" class="Images"></gall-card>
--->
+   <gall-card v-for="gallery in GalleryPics"   @showmydata='showGallData' :gallery="gallery" :key="gall.id" class="Images"></gall-card>
+
 </section>
 </main>
-</body>
 
 
 <footer>
 <section class="footerNav">
      <section class="Copyright">Copyrights</section>
      <section class="socialMedia">
-    <a href=""><img src="./images/facebook" alt="fb"></a>
-    <a href=""><img src="./images/twitter" alt="twitter"></a>
-    <a href=""><img src="./images/youtube" alt="yt"></a>
-    <a href=""><img src="./images/instagram" alt="insta"></a>
+     <a href=""><img src="../images/facebook.svg" width = "40px" height = "40px"alt=""></a>
+    <a href=""><img src="../images/twitter.svg"  width = "40px" height = "40px" alt=""></a>
+    <a href=""><img src="../images/youtube.svg"  width = "40px" height = "40px" alt=""></a>
+    <a href=""><img src="../images/instagram.svg"  width = "40px" height = "40px" alt=""></a>
     
      </section>
 
 </section>
 </footer>
+
+<script src="../js/main.js" type="module"></script>
 </html>
 
 
