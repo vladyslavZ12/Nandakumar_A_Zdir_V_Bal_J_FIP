@@ -31,7 +31,13 @@
 <a href="partners.php">Partners</a>
 <a href="programs.php">Programs</a>
 <a href="contact.php">Contact</a>
-<a href="about.php">About Us</a>
+<div class="dropdown">
+  <button class="dropbtn">About us</button>
+  <div class="dropdown-content">
+    <a href="about_us.php">Who are we</a>
+    <a href="vm.php">Vision & mission</a>
+  </div>
+</div>
 </div>
 </header>    
 <body>
@@ -43,14 +49,14 @@
     
 
 
-    <section class="desp1">
+    <section class="despskill1">
         <section class='content'>
          <h2>Alliance Hockey Website</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
           ntur?</p>
           <a href="https://alliancehockey.com/">Alliance Hockey</a>
         </section>
-        <img src="./images/" alt="img">
+        <img src="../images/thumbnail_IMG_9388.jpg" alt="img">
     </section>
     
      <section class="desp2">
@@ -59,7 +65,7 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
           ntur?</p>
         </section>
-        <img src="./images/" alt="img">
+        <img src="../images/thumbnail_IMG_9506.jpg" alt="img">
     </section>
 
 

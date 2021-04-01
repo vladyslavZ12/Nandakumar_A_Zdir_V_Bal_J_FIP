@@ -31,7 +31,13 @@
 <a href="partners.php">Partners</a>
 <a href="programs.php">Programs</a>
 <a href="contact.php">Contact</a>
-<a href="about.php">About Us</a>
+<div class="dropdown">
+  <button class="dropbtn">About us</button>
+  <div class="dropdown-content">
+    <a href="about_us.php">Who are we</a>
+    <a href="vm.php">Vision & mission</a>
+  </div>
+</div>
 </div>
 </header>    
 <body>
@@ -40,51 +46,51 @@
 <h1>Member Executive Committee</h1>
 </section>
  <section class="currentMembershipDescription">
-    <section class="desp1">
+    <section class="despcommittee1">
         <section class='content'>
          <h2>Structures</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
           ntur?</p>
         </section>
-        <img src="./images/" alt="img">
+        <img src="../images/thumbnail_IMG_1010.jpg" alt="img">
     </section>
 
 
-    <section class="desp2">
+    <section class="despcommittee2">
         <section class='content'>
          <h2>Roles</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
           ntur?</p>
         </section>
-        <img src="./images/" alt="img">
+        <img src="../images/thumbnail_IMG_1042.jpg" alt="img">
     </section>
     
-     <section class="desp1">
+     <section class="despcommittee1">
         <section class='content'>
          <h2>Voting Privileges and Process</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
           ntur?</p>
         </section>
-        <img src="./images/" alt="img">
+        <img src="../images/thumbnail_IMG_1045.jpg" alt="img">
     </section>
 
 
-    <section class="desp2">
+    <section class="despcommittee2">
         <section class='content'>
          <h2>LRG Constitution</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
           ntur?</p>
         </section>
-        <img src="./images/" alt="">
+        <img src="../images/thumbnail_IMG_9297.jpg" alt="">
     </section>
     
-    <section class="desp1">
+    <section class="despcommittee1">
         <section class='content'>
          <h2>Situation Contact Information Tree</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
           ntur?</p>
         </section>
-        <img src="./images/" alt="">
+        <img src="../images/thumbnail_IMG_9329.jpg" alt="">
     </section>
  </section>
 </body>

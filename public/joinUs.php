@@ -31,7 +31,13 @@
 <a href="partners.php">Partners</a>
 <a href="programs.php">Programs</a>
 <a href="contact.php">Contact</a>
-<a href="about.php">About Us</a>
+<div class="dropdown">
+  <button class="dropbtn">About us</button>
+  <div class="dropdown-content">
+    <a href="about_us.php">Who are we</a>
+    <a href="vm.php">Vision & mission</a>
+  </div>
+</div>
 </div>
 </header>    
 <body>
@@ -39,6 +45,47 @@
 <section class='mainTitle'>
 <h1>Join Us</h1>
 </section>
+
+
+<section class="partnersContent">
+  <section class="linkRow1">
+    <a href="">Hockey Canada</a>
+  </section>
+
+  <section class="linkRow2">
+    <section class="linkRowInner">
+      <a href="">OHF</a>
+  </section>
+
+    
+    <section class="linkRowInner">
+      <a href="">Alliance</a>
+ </section>
+
+    
+    <section class="linkRowInner">
+      <a href="">OMHA</a>
+     </section>
+  </section>
+
+  <section class="linkRow3">
+    <section class="linkRowInner">
+      <a href="">OWHA</a>
+</section>
+
+    
+    <section class="linkRowInner">
+      <a href="">OHA</a>
+ </section>
+
+    
+    <section class="linkRowInner">
+      <a href="">Sledge Hockey</a>
+     </section>
+  </section>
+
+</section>
+
 <form action="form.php" method="get">
   <section class="formContainer">
 <section class="formSection1">

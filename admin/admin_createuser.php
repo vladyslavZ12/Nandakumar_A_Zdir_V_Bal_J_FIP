@@ -3,15 +3,20 @@ require_once '../load.php';
 
 confirm_logged_in(true);
 
-if(isset($_POST['submit'])) {
+$password = passwordGenerator();
+$hashPassword = password_hash($password, PASSWORD_DEFAULT, ['cost' => 6]);
+
+echo $hashPassword;
+
+if (isset($_POST['submit'])) {
     $data = array(
         'fname'=>trim($_POST['fname']),
         'username'=>trim($_POST['username']),
         'email'=>trim($_POST['email']),
-        'password'=>trim($_POST['password']),
+        'password'=>$hashPassword,
+        'notEncrPassword'=>$password,
         'user_level'=>trim($_POST['user_level'])
  );
-
     $message = createUser($data);
 }
 
@@ -33,7 +38,7 @@ if(isset($_POST['submit'])) {
 <body>
 <h2>Create User</h2>
 <?php echo !empty($message)?$message:''; ?>
-<form action="admin_user.php" method="post">
+<form action="admin_createuser.php" method="post">
 <label>First Name</label>
 <input type="text" name="fname" value="" id="first_name">
 
@@ -46,14 +51,10 @@ if(isset($_POST['submit'])) {
 <input type="email" name="email" value="" id="email">
 
 
-<label for="password">Password</label>
-<input type="text" name="password" value="" id="password">
-
-
 <label for="user_level">User Level</label>
 <select name="user_level" id="user_level">
 <?php $user_level_map = getUserLevelMap();
-foreach($user_level_map as $val => $label):?>
+foreach ($user_level_map as $val => $label):?>
 
 <option value="<?php echo $val;?>"><?php echo $label; ?></option>
 <?php endforeach;?>
@@ -61,26 +62,9 @@ foreach($user_level_map as $val => $label):?>
 
 <button type="submit" name="submit" >Create</button>
 
-<?php 
-if(isset($_POST['submit'])){
-$to = $_POST['email'];
-$subject = 'Created new user';
-$message = 'This email is to notify that you have successfully Created a new user';
-$headers = 'From: donotreply@gmail.com';
-mail($to, $subject, $message, $headers);
-
-function passwordGenerator() {
-    $all_possible_alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890';
-    $password = array();
-    $alphabetsLen = strlen($all_possible_alphabet) ; 
-    for ($i = 0; $i < 8; $i++) {
-        $pass_var = rand(0, $alphabetsLen);
-        $password[] = $all_possible_alphabet[$pass_var];
-    } 
-}
-}
-?>
-
 </form>
+
+<a href="index.php">Back to dashboard</a>
+
 </body>
 </html>

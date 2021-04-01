@@ -12,10 +12,10 @@ export default {
     },
 
     template: 
-    `<li @click="logClicked">
+    `<section class="galleryPics" @click="logClicked">
         <img :src="'../images/' + gallery.image" :alt='gallery.name + " image"'>
       
-    </li>`,
+    </section>`,
     
     created: function () {
         console.log(`created ${this.gallery.name}'s card`);

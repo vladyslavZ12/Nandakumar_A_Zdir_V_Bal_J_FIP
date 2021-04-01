@@ -1,5 +1,5 @@
 <?php
-    include("./config/database.php");
+    include("connect.php");
     include("functions.php");
 
     if(isset($_GET["id"])) {

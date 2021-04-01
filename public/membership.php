@@ -30,7 +30,13 @@
 <a href="partners.php">Partners</a>
 <a href="programs.php">Programs</a>
 <a href="contact.php">Contact</a>
-<a href="about.php">About Us</a>
+<div class="dropdown">
+  <button class="dropbtn">About us</button>
+  <div class="dropdown-content">
+    <a href="about_us.php">Who are we</a>
+    <a href="vm.php">Vision & mission</a>
+  </div>
+</div>
 </div>
 </header>    
 <body>
@@ -45,7 +51,7 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
           ntur?</p>
         </section>
-        <img src="./images/" alt="">
+        <img src="../images/thumbnail_IMG_0947.jpg" alt="">
     </section>
 
 
@@ -54,17 +60,18 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
           ntur?</p>
         </section>
-        <img src="./images/" alt="">
+        <img src="../images/thumbnail_IMG_0996.jpg" alt="">
     </section>
 
+<section class="despmembership1">
         <section class='content'>
         <h2>Schedule</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
           ntur?</p>
           
-        <img src="./images/" alt="">
+        <img src="../images/thumbnail_IMG_1010.jpg" alt="">
         </section>
-
+        </section>
  </section>
 </body>
 
