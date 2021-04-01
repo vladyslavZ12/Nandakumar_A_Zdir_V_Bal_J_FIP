@@ -38,6 +38,11 @@ p {
     font-size: 14px;
     font-family: 'Quicksand', Arial, Helvetica, sans-serif;
 }
+
+#homevid {
+    width: 1080px;
+}
+
 .mainImage {
     display: flex;
     justify-content: center;
@@ -61,7 +66,7 @@ p {
       font-size: 16px;
       font-family: 'Quicksand', arial, sans-serif;
       border:none;
-      margin-right: 5px;
+      margin-right: 15px;
   }
   .dropdown-content a {
     color: black;
@@ -105,30 +110,9 @@ p {
     margin-top: 30px;
 }
 
-
-.mainImage img {
-    box-shadow: 0px -1px 16px 0px rgba(0,0,0,0.51);
--webkit-box-shadow: 0px -1px 16px 0px rgba(0,0,0,0.51);
--moz-box-shadow: 0px -1px 16px 0px rgba(0,0,0,0.51);
-}
-
-.Set1 img {
-    box-shadow: 0px -1px 28px 0px rgba(0,0,0,0.51);
--webkit-box-shadow: 0px -1px 28px 0px rgba(0,0,0,0.51);
--moz-box-shadow: 0px -1px 28px 0px rgba(0,0,0,0.51);
-}
-
-.detail1 img {
-    box-shadow: 0px -1px 28px 1px rgba(0,0,0,0.46);
--webkit-box-shadow: 0px -1px 28px 1px rgba(0,0,0,0.46);
--moz-box-shadow: 0px -1px 28px 1px rgba(0,0,0,0.46);
-}
-
-
-.detail2 img {
-    box-shadow: 0px -1px 28px 1px rgba(0,0,0,0.46);
--webkit-box-shadow: 0px -1px 28px 1px rgba(0,0,0,0.46);
--moz-box-shadow: 0px -1px 28px 1px rgba(0,0,0,0.46);
+video {
+    display: flex;
+    border: none;
 }
 
 
@@ -165,8 +149,21 @@ input {
     margin-left: 30px;
 }
 
+.gallerySection {
+max-width: 1300px;
+margin-top: 20px;
+flex-wrap: wrap;
+    display: flex;
+margin: auto;
+justify-content: space-around;
+}
 
-
+.galleryPics {
+    display: flex;
+    margin-left: 10px;
+    margin-top: 20px;
+    border: 5px solid #064211;
+}
 .formSection3 {
     display: flex;
     flex-direction: column;
@@ -199,19 +196,17 @@ input {
     flex-wrap: wrap;
     font-family: 'Quicksand', Arial, sans-serif;
 margin-bottom: 40px;
-
-margin-left: 100px;
+margin: auto;
     button {
         width: 80px;
         border: none;
-        height: 20px;
-margin-left:630px;
+        height: 30px;
+        margin: auto;
         color: white;
         border-radius: 5px;
-        background-color: #064211;
-        box-shadow: 11px 17px 27px -10px rgba(0,0,0,0.55);
--webkit-box-shadow: 11px 17px 27px -10px rgba(0,0,0,0.55);
--moz-box-shadow: 11px 17px 27px -10px rgba(0,0,0,0.55);
+        background-color: #064211;box-shadow: 0px -1px 16px 0px rgba(0,0,0,0.51);
+        -webkit-box-shadow: 0px -1px 16px 0px rgba(0,0,0,0.51);
+        -moz-box-shadow: 0px -1px 16px 0px rgba(0,0,0,0.51);
     }
 
 }
@@ -219,24 +214,104 @@ margin-left:630px;
 .currentMembershipDescription {
 display: flex;
 flex-direction: column;
-justify-content: center;
+margin: auto;
+margin-bottom: 50px;
 }
 
 .desp1 {
 display: flex;
-justify-content: center;
+margin: auto;
 flex-direction: row;
-margin-top: 30px;
+margin-top: 60px;
 }
+
+
+.despprograms1 {
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    margin-top: 60px;
+    justify-content: center;
+
+    img {
+        width: 400px;
+        height: 267px;
+    }
+    }
+    
+.contentprograms {
+    display: flex;
+    flex-direction: column;
+    
+    font-family: 'Quicksand', Arial, sans-serif;
+}
+.despcertification1 {
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    margin-top: 60px;
+    }
+.despmembership1 {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    margin-top: 80px;
+    }
+    
+
 
 .desp2 {
     display: flex;
-    justify-content: center;
+    margin: auto;
     flex-direction: row-reverse;
-    margin-top: 30px;
+    margin-top: 60px;
     }
 
+    .despprograms2 {
+        display: flex;
+        margin: auto;
+        flex-direction: row-reverse;
+        margin-top: 60px;
+        img {
+            width: 400px;
+            height: 267px;
+        }
+    
+    }
     .desp1 a{
         color: rgba(10, 10, 238, 0.952);
         font-family: 'Quicksand', Arial, sans-serif;
+    }
+    .despskill1 a{
+        color: rgba(10, 10, 238, 0.952);
+        font-family: 'Quicksand', Arial, sans-serif;
+    }
+    .despvm1 {
+        
+display: flex;margin: auto;
+flex-direction: row;
+margin-top: 30px;
+
+    }
+
+    .despskill1 {
+        
+display: flex;margin: auto;
+flex-direction: row;
+margin-top: 30px;
+    }
+
+            
+.despcommittee1 {
+    display: flex;margin: auto;
+    flex-direction: row;
+    margin-top: 60px;
+    }
+
+    
+.despcommittee2 {
+    display: flex;
+    margin: auto;
+    flex-direction: row-reverse;
+    margin-top: 60px;
     }

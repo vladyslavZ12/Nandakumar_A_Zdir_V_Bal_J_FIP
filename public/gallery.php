@@ -34,7 +34,13 @@
 <a href="partners.php">Partners</a>
 <a href="programs.php">Programs</a>
 <a href="contact.php">Contact</a>
-<a href="about.php">About Us</a>
+<div class="dropdown">
+  <button class="dropbtn">About us</button>
+  <div class="dropdown-content">
+    <a href="about_us.php">Who are we</a>
+    <a href="vm.php">Vision & mission</a>
+  </div>
+</div>
 </div>
 </header>    
 <body>
@@ -43,8 +49,8 @@
 <h1>Gallery</h1>
 </section>
 <main id="app1">
-<section class="projectSection">
-   <gall-card v-for="gallery in GalleryPics"   @showmydata='showGallData' :gallery="gallery" :key="gall.id" class="Images"></gall-card>
+<section class="gallerySection">
+ <gall-card v-for="gallery in gallPics"   @showmydata='showGallData' :gallery="gallery" :key="gallery.id" class="Images"></gall-card>
 
 </section>
 </main>

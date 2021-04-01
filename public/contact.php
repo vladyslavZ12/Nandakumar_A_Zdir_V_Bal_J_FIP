@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Membership</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -15,6 +15,8 @@
 </section>
 
 <div class='nav'>
+  <button id="button"></button>
+  <div id="burgerCon">
 <a href="index.php">Home</a>
 <div class="dropdown">
   <button class="dropbtn">Membership</button>
@@ -30,7 +32,14 @@
 <a href="partners.php">Partners</a>
 <a href="programs.php">Programs</a>
 <a href="contact.php">Contact</a>
-<a href="about_us.php">About Us</a>
+<div class="dropdown">
+  <button class="dropbtn">About us</button>
+  <div class="dropdown-content">
+    <a href="about_us.php">Who are we</a>
+    <a href="vm.php">Vision & mission</a>
+  </div>
+</div>
+</div>
 </div>
 </header>    
 <body>
@@ -38,27 +47,35 @@
 <h1>Contact Us</h1>
 </section>
 
+<section class="contactArea">
+
+<section class="addressArea">
+<h2>Address</h2>
+<p>lorem ipsum</p>
+<h3>lrg@londonrefereesgroup.com</h3>
+</section>
+
 <form action="../includes/mail/send.php" id="contactForm" method="post">
             <h2 class="hidden">Contact form</h2>
-                <label for="name">Name: (required)</label><br>
+                <label for="name"></label><br>
                 
-                <input type="text" required id="name" name="firstname" size="30" placeholder="Enter your First name"><br>
-                <label for="name">Last name: (required)</label><br>
+                <input type="text" required id="name" name="firstname" size="30" placeholder="First Name"><br>
+                <label for="name"></label><br>
                 
-                <input type="text" required id="name" name="lastname" size="30" placeholder="Enter your last name"><br>
-                <label for="email">E-mail: (will not be published)</label><br>
-              <input type="email" required id="email" name="email" size="30" placeholder="Enter your Email"><br>
+                <input type="text" required id="name" name="lastname" size="30" placeholder="Last Name"><br>
+                <label for="email"></label><br>
+              <input type="email" required id="email" name="email" size="30" placeholder="Email"><br>
                 
               
-                <label for="comments">Comments:</label><br>
-                <textarea name="comment" id="comments" required cols="50" rows="8"></textarea><br><br>
+                <label for="comments"></label><br>
+                <textarea name="comment" id="comments" required cols="50" rows="8" placeholder="Message"></textarea><br><br>
                 
                 <button class="submitContainer">
                     <span class="submit">Submit</span>
                     <i class="fas fa-paper-plane"></i>
                 </button>
         </form>
-
+        </section>
 
 </body>
 

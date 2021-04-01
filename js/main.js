@@ -1,5 +1,5 @@
 import { fetchData } from "./modules/TheDataMiner.js";
-import gallery from "./modules/AppCard.js";
+import galleryCard from "./modules/AppCard.js";
 
 (() => {
 
@@ -19,7 +19,7 @@ import gallery from "./modules/AppCard.js";
     },
     
     components: {
-        "gall-card": gallery
+        "gall-card": galleryCard
     }
     }).$mount("#app1"); // also connects Vue to your wrapper in HTML
 })();

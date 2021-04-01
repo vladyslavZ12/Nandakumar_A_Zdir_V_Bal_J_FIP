@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>Homepage</title>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -15,6 +15,9 @@
 </section>
 
 <div class='nav'>
+   <nav>
+      <button id="button"></button>
+      <div id="burgerCon">
 <a href="#">Home</a>
 <div class="dropdown">
   <button class="dropbtn">Membership</button>
@@ -30,7 +33,15 @@
 <a href="partners.php">Partners</a>
 <a href="programs.php">Programs</a>
 <a href="contact.php">Contact</a>
-<a href="about_us.php">About Us</a>
+<div class="dropdown">
+  <button class="dropbtn">About us</button>
+  <div class="dropdown-content">
+    <a href="about_us.php">Who are we</a>
+    <a href="vm.php">Vision & mission</a>
+  </div>
+  </div>
+  </nav>
+</div>
 </header>    
 <body>
 
@@ -38,7 +49,7 @@
 <h1>London Refrees Group</h1>
 </section>
     <section class="mainImage">
-    <img src="../images/alterna1.jpg" class="shadow" alt="Hockey">
+       <video src="../images/LRG_homevid.mp4" autoplay loop controls id="homevid"></video>
     </section>
 
     <section class="subCategory">
@@ -130,7 +141,8 @@
 
     </section>
 </body>
-
+<script src="../js/menu.js"></script>
+<script src="../js/volume.js"></script>
 <footer>
 <section class="footerNav">
      <section class="Copyright">Copyrights</section>

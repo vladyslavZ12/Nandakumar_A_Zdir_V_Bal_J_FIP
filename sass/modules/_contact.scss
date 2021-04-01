@@ -1,0 +1,60 @@
+.hidden {
+    display: none;
+}
+
+.contactArea {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.addressArea {
+    margin-right: 100px;
+    margin-top: 125px;
+}
+
+.addressArea h2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #064211;
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+}
+
+
+.addressArea h3 {
+    color: #107923;
+}
+
+#contactForm input {
+    border: 1px solid rgb(187, 187, 187);
+    box-shadow: -1px -1px 20px 0px rgba(0,0,0,0.15);
+-webkit-box-shadow: -1px -1px 20px 0px rgba(0,0,0,0.15);
+-moz-box-shadow: -1px -1px 20px 0px rgba(0,0,0,0.15);
+}
+
+#contactForm textarea {
+    border-radius: 5px;
+    border: 1px solid rgb(187, 187, 187);
+    box-shadow: -1px -1px 20px 0px rgba(0,0,0,0.15);
+-webkit-box-shadow: -1px -1px 20px 0px rgba(0,0,0,0.15);
+-moz-box-shadow: -1px -1px 20px 0px rgba(0,0,0,0.15);
+}
+
+
+.addressArea p {
+    font-size: 14px;
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+}
+
+.submitContainer {
+    display: flex;
+    background-color: #064211;
+    border: none;
+    width: 60px;
+    height: 23px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;  font-size: 14px;
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+
+}

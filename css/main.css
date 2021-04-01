@@ -23,6 +23,33 @@ a {
   margin-right: 200px;
 }
 
+#burgerCon {
+  display: none;
+}
+
+iframe {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.nav #button {
+  background: url(../images/burger_menu.svg) center no-repeat;
+  border: 0px;
+  width: 40px;
+  height: 20px;
+  transition: all 400ms ease;
+}
+
+.nav #button.expanded {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+#burgerCon.slideToggle {
+  display: block;
+}
+
 .mainTitle {
   width: 100%;
   height: 60px;
@@ -61,6 +88,10 @@ p {
   font-family: "Quicksand", Arial, Helvetica, sans-serif;
 }
 
+#homevid {
+  width: 1080px;
+}
+
 .mainImage {
   display: flex;
   justify-content: center;
@@ -84,7 +115,7 @@ p {
   font-size: 16px;
   font-family: "Quicksand", arial, sans-serif;
   border: none;
-  margin-right: 5px;
+  margin-right: 15px;
 }
 
 .dropdown-content a {
@@ -131,28 +162,9 @@ p {
   margin-top: 30px;
 }
 
-.mainImage img {
-  box-shadow: 0px -1px 16px 0px rgba(0, 0, 0, 0.51);
-  -webkit-box-shadow: 0px -1px 16px 0px rgba(0, 0, 0, 0.51);
-  -moz-box-shadow: 0px -1px 16px 0px rgba(0, 0, 0, 0.51);
-}
-
-.Set1 img {
-  box-shadow: 0px -1px 28px 0px rgba(0, 0, 0, 0.51);
-  -webkit-box-shadow: 0px -1px 28px 0px rgba(0, 0, 0, 0.51);
-  -moz-box-shadow: 0px -1px 28px 0px rgba(0, 0, 0, 0.51);
-}
-
-.detail1 img {
-  box-shadow: 0px -1px 28px 1px rgba(0, 0, 0, 0.46);
-  -webkit-box-shadow: 0px -1px 28px 1px rgba(0, 0, 0, 0.46);
-  -moz-box-shadow: 0px -1px 28px 1px rgba(0, 0, 0, 0.46);
-}
-
-.detail2 img {
-  box-shadow: 0px -1px 28px 1px rgba(0, 0, 0, 0.46);
-  -webkit-box-shadow: 0px -1px 28px 1px rgba(0, 0, 0, 0.46);
-  -moz-box-shadow: 0px -1px 28px 1px rgba(0, 0, 0, 0.46);
+video {
+  display: flex;
+  border: none;
 }
 
 .formContainer {
@@ -187,6 +199,22 @@ input {
   margin-left: 30px;
 }
 
+.gallerySection {
+  max-width: 1300px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.galleryPics {
+  display: flex;
+  margin-left: 10px;
+  margin-top: 20px;
+  border: 5px solid #064211;
+}
+
 .formSection3 {
   display: flex;
   flex-direction: column;
@@ -218,39 +246,83 @@ input {
   flex-wrap: wrap;
   font-family: "Quicksand", Arial, sans-serif;
   margin-bottom: 40px;
-  margin-left: 100px;
+  margin: auto;
 }
 .submitButton button {
   width: 80px;
   border: none;
-  height: 20px;
-  margin-left: 630px;
+  height: 30px;
+  margin: auto;
   color: white;
   border-radius: 5px;
   background-color: #064211;
-  box-shadow: 11px 17px 27px -10px rgba(0, 0, 0, 0.55);
-  -webkit-box-shadow: 11px 17px 27px -10px rgba(0, 0, 0, 0.55);
-  -moz-box-shadow: 11px 17px 27px -10px rgba(0, 0, 0, 0.55);
+  box-shadow: 0px -1px 16px 0px rgba(0, 0, 0, 0.51);
+  -webkit-box-shadow: 0px -1px 16px 0px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: 0px -1px 16px 0px rgba(0, 0, 0, 0.51);
 }
 
 .currentMembershipDescription {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  margin: auto;
+  margin-bottom: 50px;
 }
 
 .desp1 {
   display: flex;
-  justify-content: center;
+  margin: auto;
   flex-direction: row;
-  margin-top: 30px;
+  margin-top: 60px;
+}
+
+.despprograms1 {
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  margin-top: 60px;
+  justify-content: center;
+}
+.despprograms1 img {
+  width: 400px;
+  height: 267px;
+}
+
+.contentprograms {
+  display: flex;
+  flex-direction: column;
+  font-family: "Quicksand", Arial, sans-serif;
+}
+
+.despcertification1 {
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  margin-top: 60px;
+}
+
+.despmembership1 {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  margin-top: 80px;
 }
 
 .desp2 {
   display: flex;
-  justify-content: center;
+  margin: auto;
   flex-direction: row-reverse;
-  margin-top: 30px;
+  margin-top: 60px;
+}
+
+.despprograms2 {
+  display: flex;
+  margin: auto;
+  flex-direction: row-reverse;
+  margin-top: 60px;
+}
+.despprograms2 img {
+  width: 400px;
+  height: 267px;
 }
 
 .desp1 a {
@@ -258,12 +330,178 @@ input {
   font-family: "Quicksand", Arial, sans-serif;
 }
 
+.despskill1 a {
+  color: rgba(10, 10, 238, 0.952);
+  font-family: "Quicksand", Arial, sans-serif;
+}
+
+.despvm1 {
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  margin-top: 30px;
+}
+
+.despskill1 {
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  margin-top: 30px;
+}
+
+.despcommittee1 {
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  margin-top: 60px;
+}
+
+.despcommittee2 {
+  display: flex;
+  margin: auto;
+  flex-direction: row-reverse;
+  margin-top: 60px;
+}
+
+.partnersContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.linkRow1 {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  background-color: grey;
+  margin-top: 40px;
+  border-radius: 25px;
+  width: 800px;
+  box-shadow: -1px -1px 20px 0px rgba(0, 0, 0, 0.37);
+  -webkit-box-shadow: -1px -1px 20px 0px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: -1px -1px 20px 0px rgba(0, 0, 0, 0.37);
+  height: 100px;
+}
+
+.linkRow1 a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  margin: auto;
+  font-family: "Quicksand", Arial, Helvetica, sans-serif;
+}
+
+.linkRow2, .linkRow3 {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  flex-direction: row;
+  width: 800px;
+  justify-content: space-evenly;
+}
+
+.linkRowInner {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  background-color: grey;
+  width: 240px;
+  box-shadow: -1px -1px 20px 0px rgba(0, 0, 0, 0.37);
+  -webkit-box-shadow: -1px -1px 20px 0px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: -1px -1px 20px 0px rgba(0, 0, 0, 0.37);
+  border-radius: 15px;
+  height: 100px;
+  margin-top: 30px;
+}
+
+.linkRow2 a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 500;
+  margin: auto;
+  font-family: "Quicksand", Arial, Helvetica, sans-serif;
+}
+
+.linkRow3 a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  margin: auto;
+  font-family: "Quicksand", Arial, Helvetica, sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+.contactArea {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+.addressArea {
+  margin-right: 100px;
+  margin-top: 125px;
+}
+
+.addressArea h2 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #064211;
+  font-family: "Quicksand", Arial, Helvetica, sans-serif;
+}
+
+.addressArea h3 {
+  color: #107923;
+}
+
+#contactForm input {
+  border: 1px solid #bbbbbb;
+  box-shadow: -1px -1px 20px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: -1px -1px 20px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: -1px -1px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+#contactForm textarea {
+  border-radius: 5px;
+  border: 1px solid #bbbbbb;
+  box-shadow: -1px -1px 20px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: -1px -1px 20px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: -1px -1px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+.addressArea p {
+  font-size: 14px;
+  font-family: "Quicksand", Arial, Helvetica, sans-serif;
+}
+
+.submitContainer {
+  display: flex;
+  background-color: #064211;
+  border: none;
+  width: 60px;
+  height: 23px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  font-family: "Quicksand", Arial, Helvetica, sans-serif;
+}
+
 .footerNav {
   width: 100%;
   height: 80px;
   color: black;
   margin-top: 20px;
-  margin-bottom: 0px;
   display: flex;
   font-family: "Quicksand", arial, sans-serif;
   justify-content: center;
@@ -281,6 +519,634 @@ input {
 .socialMedia {
   margin-top: 25px;
   margin-left: 60px;
+}
+
+@media (min-width: 500px) {
+  #homevid {
+    width: 500px;
+  }
+
+  h1 {
+    margin-left: 30px;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav a {
+    font-size: 14px;
+  }
+
+  .subCategory {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .Set1 {
+    display: flex;
+    margin: auto;
+  }
+
+  .Set1 p {
+    width: 300px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .Set1 img {
+    width: 300px;
+  }
+
+  .dropbtn {
+    font-size: 14px;
+  }
+
+  .detailsSection {
+    display: flex;
+    margin: auto;
+  }
+
+  .detail1 {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: auto;
+  }
+
+  .detail2 {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: auto;
+  }
+
+  .contactArea {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #contactForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  }
+
+  #contactForm input {
+    display: flex;
+    margin: auto;
+  }
+
+  .submitContainer {
+    display: flex;
+    margin: auto;
+  }
+
+  .addressArea {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .addressArea h3 {
+    margin-top: 0px;
+  }
+
+  .desp1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .desp1 p {
+    text-align: center;
+    font-size: 14px;
+  }
+  .desp1 img {
+    display: flex;
+    margin: auto;
+    width: 400px;
+    height: 267px;
+  }
+
+  .despvm1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .despvm1 h2 {
+    text-align: center;
+  }
+  .despvm1 img {
+    width: 400px;
+    height: 267px;
+    margin: auto;
+  }
+  .despvm1 p {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .despmembership1 {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .despskill1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .despskill1 h2 {
+    text-align: center;
+  }
+  .despskill1 p {
+    text-align: center;
+  }
+  .despskill1 a {
+    margin: auto;
+  }
+  .despskill1 img {
+    width: 400px;
+    height: 267px;
+  }
+
+  .desp2 {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  .desp2 img {
+    width: 400px;
+    height: 267px;
+  }
+  .desp2 h2 {
+    text-align: center;
+  }
+  .desp2 p {
+    text-align: center;
+  }
+
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .formSection1 {
+    display: flex;
+    margin: auto;
+  }
+
+  .formSection2 {
+    display: flex;
+    margin: auto;
+  }
+
+  .conditions {
+    display: flex;
+    margin-top: 20px;
+  }
+  .conditions p {
+    font-size: 12px;
+  }
+
+  .submitButton {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .submitButton p {
+    text-align: center;
+    margin: auto;
+    font-size: 14px;
+  }
+  .submitButton button {
+    margin-top: 20px;
+  }
+
+  .partnersContent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .linkRow2, .linkRow3 {
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+  }
+
+  .linkRowInner {
+    height: 50px;
+  }
+
+  .linkRow1 {
+    height: 70px;
+    width: 500px;
+  }
+
+  .despcommittee1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .despcommittee2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .despcommittee2 img {
+    width: 400px;
+  }
+
+  .despcertification1 {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .contentprograms {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .contentprograms a {
+    color: blue;
+  }
+
+  .despprograms1 {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .despprograms1 img {
+    margin: auto;
+  }
+
+  .despprograms2 {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .despprograms2 img {
+    margin: auto;
+  }
+}
+@media (min-width: 1000px) {
+  #button {
+    display: none;
+  }
+
+  #burgerCon.slideToggle {
+    display: none;
+  }
+
+  #burgerCon {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav a {
+    font-size: 18px;
+  }
+
+  .dropbtn {
+    font-size: 18px;
+  }
+
+  #homevid {
+    width: 800px;
+  }
+
+  .subCategory {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .Set1 img {
+    width: 300px;
+  }
+
+  .Set1 p {
+    font-size: 14px;
+  }
+
+  .detail1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+  }
+
+  .detail2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin: 0;
+  }
+
+  .contactArea {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #contactForm {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #contactForm input {
+    display: flex;
+    margin: 0;
+  }
+
+  .submitContainer {
+    display: flex;
+    margin: 0;
+  }
+
+  .addressArea {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    text-align: left;
+    margin-top: 100px;
+  }
+  .addressArea h3 {
+    margin-top: 0px;
+  }
+
+  .contentprograms {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .contentprograms a {
+    color: blue;
+    margin-left: 200px;
+  }
+
+  .despprograms1 {
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    margin-top: 30px;
+    text-align: left;
+  }
+  .despprograms1 p, .despprograms1 h2 {
+    width: 50%;
+    margin-left: 250px;
+  }
+  .despprograms1 img {
+    margin: auto;
+    margin-right: 250px;
+  }
+
+  .despprograms2 {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin-top: 30px;
+    text-align: right;
+  }
+  .despprograms2 p, .despprograms2 h2 {
+    width: 50%;
+    margin-right: 250px;
+  }
+  .despprograms2 img {
+    margin: auto;
+    margin-left: 250px;
+  }
+
+  .despmembership1 {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  .desp1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .desp1 p {
+    text-align: left;
+    margin-left: 150px;
+    font-size: 14px;
+    width: 70%;
+  }
+  .desp1 img {
+    display: flex;
+    margin-top: 135px;
+    width: 400px;
+    height: 267px;
+    margin-right: 200px;
+  }
+
+  .despvm1 {
+    display: flex;
+    flex-direction: row;
+  }
+  .despvm1 h2 {
+    text-align: left;
+    width: 80%;
+    margin-left: 150px;
+  }
+  .despvm1 img {
+    width: 400px;
+    height: 267px;
+    margin: auto;
+    margin-right: 100px;
+  }
+  .despvm1 p {
+    text-align: left;
+    font-size: 14px;
+    width: 80%;
+    margin-left: 150px;
+  }
+
+  .despskill1 {
+    display: flex;
+    flex-direction: row;
+  }
+  .despskill1 h2 {
+    text-align: left;
+  }
+  .despskill1 p {
+    text-align: left;
+    margin-right: 100px;
+  }
+  .despskill1 img {
+    width: 400px;
+    height: 267px;
+  }
+
+  .desp2 {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 50px;
+  }
+  .desp2 img {
+    width: 400px;
+    height: 267px;
+    margin-right: 100px;
+  }
+  .desp2 h2 {
+    text-align: left;
+  }
+  .desp2 p {
+    text-align: left;
+  }
+
+  .formContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .formSection1 {
+    display: flex;
+    margin-right: 100px;
+  }
+
+  .formSection2 {
+    display: flex;
+    margin-left: 100px;
+  }
+
+  .conditions {
+    margin-top: 20px;
+    display: flex;
+  }
+  .conditions p {
+    font-size: 14px;
+  }
+
+  .submitButton {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .submitButton p {
+    text-align: center;
+    margin: auto;
+    font-size: 14px;
+  }
+  .submitButton button {
+    margin-top: 20px;
+  }
+
+  .partnersContent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .linkRow2, .linkRow3 {
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .linkRowInner {
+    height: 100px;
+    width: 240px;
+  }
+
+  .linkRow1 {
+    height: 100px;
+    width: 800px;
+  }
+
+  .despcommittee1 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .despcommittee2 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .despcommittee2 img {
+    width: 400px;
+    margin-right: 100px;
+  }
+
+  .despcommittee1 img {
+    width: 400px;
+    margin-left: 100px;
+  }
+
+  .despcertification1 {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    text-align: left;
+    flex-direction: row;
+    margin-top: 40px;
+  }
+  .despcertification1 img {
+    margin-left: 30px;
+  }
+  .despcertification1 p {
+    margin-right: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  #button {
+    display: none;
+  }
+
+  #burgerCon.slideToggle {
+    display: none;
+  }
+
+  #burgerCon {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav a {
+    font-size: 18px;
+  }
+
+  .dropbtn {
+    font-size: 18px;
+  }
+
+  #homevid {
+    width: 1080px;
+  }
+
+  #contactForm input {
+    font-size: 14px;
+  }
+
+  #contactForm textarea {
+    font-size: 14px;
+  }
+
+  .addressArea {
+    margin-right: 0px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
