@@ -15,11 +15,14 @@
 </section>
 
 <div class='nav'>
+   <nav>
+      <button id="button"></button>
+      <div id="burgerCon">
 <a href="index.php">Home</a>
 <div class="dropdown">
   <button class="dropbtn">Membership</button>
   <div class="dropdown-content">
-    <a href="#">Current Membership</a>
+    <a href="membership.php">Current Membership</a>
     <a href="joinUs.php">Join us</a>
     <a href="committee.php">Committee</a>
     <a href="certification.php">Certification</a>
@@ -27,7 +30,7 @@
     <a href="gallery.php">Gallery</a>
   </div>
 </div>
-<a href="partners.php">Partners</a>
+<a href="#">Partners</a>
 <a href="programs.php">Programs</a>
 <a href="contact.php">Contact</a>
 <div class="dropdown">
@@ -37,6 +40,7 @@
     <a href="vm.php">Vision & mission</a>
   </div>
 </div>
+</nav>
 </div>
 </header>    
 <body>
@@ -47,44 +51,45 @@
 
 <section class="partnersContent">
   <section class="linkRow1">
-    <a href="">Hockey Canada</a>
+    <a href="https://www.hockeycanada.ca/en-ca/home">Hockey Canada</a>
   </section>
 
   <section class="linkRow2">
     <section class="linkRowInner">
-      <a href="">OHF</a>
+      <a href="https://www.ohf.on.ca/">OHF</a>
   </section>
 
     
     <section class="linkRowInner">
-      <a href="">Alliance</a>
+      <a href="https://alliancehockey.com/">Alliance</a>
  </section>
 
     
     <section class="linkRowInner">
-      <a href="">OMHA</a>
+      <a href="https://www.omha.net/">OMHA</a>
      </section>
   </section>
 
   <section class="linkRow3">
     <section class="linkRowInner">
-      <a href="">OWHA</a>
+      <a href="https://www.owha.on.ca/">OWHA</a>
 </section>
 
     
     <section class="linkRowInner">
-      <a href="">OHA</a>
+      <a href="http://www.ohahockey.ca/">OHA</a>
  </section>
 
     
     <section class="linkRowInner">
-      <a href="">Sledge Hockey</a>
+      <a href="https://sportabilitybc.ca">Sledge Hockey</a>
      </section>
   </section>
 
 </section>
 
 </body>
+<script src="../js/menu.js"></script>
 
 <footer>
 <section class="footerNav">

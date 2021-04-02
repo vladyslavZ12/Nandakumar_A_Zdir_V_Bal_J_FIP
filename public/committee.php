@@ -16,6 +16,9 @@
 </section>
 
 <div class='nav'>
+   <nav>
+      <button id="button"></button>
+      <div id="burgerCon">
 <a href="index.php">Home</a>
 <div class="dropdown">
   <button class="dropbtn">Membership</button>
@@ -38,6 +41,7 @@
     <a href="vm.php">Vision & mission</a>
   </div>
 </div>
+</nav>
 </div>
 </header>    
 <body>
@@ -49,27 +53,33 @@
     <section class="despcommittee1">
         <section class='content'>
          <h2>Structures</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          ntur?</p>
+          <p>This group works with a proper structure and that is something to be followed when you are in this group. </p>
         </section>
         <img src="../images/thumbnail_IMG_1010.jpg" alt="img">
     </section>
 
 
+
     <section class="despcommittee2">
         <section class='content'>
          <h2>Roles</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          ntur?</p>
+          <p>Roles are clearly distinguised as per your capacity, talent and experience.</p>
+        </section>
+        <img src="../images/thumbnail_IMG_1042.jpg" alt="">
+    </section>
+
+    <!-- <section class="despcommittee2">
+        <section class='content'>
+         <h2>Roles</h2>
+          <p>Roles are clearly distinguised as per your capacity, talent and experience. Roles can change by time but one is required to be giving their 100% to the role they are committed to</p>
         </section>
         <img src="../images/thumbnail_IMG_1042.jpg" alt="img">
-    </section>
+    </section> -->
     
      <section class="despcommittee1">
         <section class='content'>
          <h2>Voting Privileges and Process</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          ntur?</p>
+          <p>The right to vote to choose the right leader is given to you and you are at freedom to choose the leaders or even be one</p>
         </section>
         <img src="../images/thumbnail_IMG_1045.jpg" alt="img">
     </section>
@@ -78,8 +88,7 @@
     <section class="despcommittee2">
         <section class='content'>
          <h2>LRG Constitution</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          ntur?</p>
+          <p>LRG follows an set of rules and principles for the welfare of the players and refrees</p>
         </section>
         <img src="../images/thumbnail_IMG_9297.jpg" alt="">
     </section>
@@ -94,6 +103,7 @@
     </section>
  </section>
 </body>
+<script src="../js/menu.js"></script>
 
 <footer>
 <section class="footerNav">

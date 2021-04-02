@@ -16,6 +16,9 @@
 </section>
 
 <div class='nav'>
+   <nav>
+      <button id="button"></button>
+      <div id="burgerCon">
 <a href="index.php">Home</a>
 <div class="dropdown">
   <button class="dropbtn">Membership</button>
@@ -38,6 +41,7 @@
     <a href="vm.php">Vision & mission</a>
   </div>
 </div>
+</nav>
 </div>
 </header>    
 <body>
@@ -47,44 +51,46 @@
 </section>
 
 
+
 <section class="partnersContent">
   <section class="linkRow1">
-    <a href="">Hockey Canada</a>
+    <a href="https://www.hockeycanada.ca/en-ca/home">Hockey Canada</a>
   </section>
 
   <section class="linkRow2">
     <section class="linkRowInner">
-      <a href="">OHF</a>
+      <a href="https://www.ohf.on.ca/">OHF</a>
   </section>
 
     
     <section class="linkRowInner">
-      <a href="">Alliance</a>
+      <a href="https://alliancehockey.com/">Alliance</a>
  </section>
 
     
     <section class="linkRowInner">
-      <a href="">OMHA</a>
+      <a href="https://www.omha.net/">OMHA</a>
      </section>
   </section>
 
   <section class="linkRow3">
     <section class="linkRowInner">
-      <a href="">OWHA</a>
+      <a href="https://www.owha.on.ca/">OWHA</a>
 </section>
 
     
     <section class="linkRowInner">
-      <a href="">OHA</a>
+      <a href="http://www.ohahockey.ca/">OHA</a>
  </section>
 
     
     <section class="linkRowInner">
-      <a href="">Sledge Hockey</a>
+      <a href="https://sportabilitybc.ca">Sledge Hockey</a>
      </section>
   </section>
 
 </section>
+
 
 <form action="form.php" method="get">
   <section class="formContainer">
@@ -185,6 +191,7 @@
         </section>
     </form>
 </body>
+<script src="../js/menu.js"></script>
 
 <footer>
 <section class="footerNav">

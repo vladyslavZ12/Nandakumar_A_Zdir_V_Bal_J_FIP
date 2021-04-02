@@ -16,6 +16,9 @@
 </section>
 
 <div class='nav'>
+   <nav>
+      <button id="button"></button>
+      <div id="burgerCon">
 <a href="index.php">Home</a>
 <div class="dropdown">
   <button class="dropbtn">Membership</button>
@@ -38,6 +41,7 @@
     <a href="vm.php">Vision & mission</a>
   </div>
 </div>
+</nav>
 </div>
 </header>    
 <body>
@@ -52,18 +56,16 @@
     <section class="despskill1">
         <section class='content'>
          <h2>Alliance Hockey Website</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          ntur?</p>
+          <p>Visit Alliance Hockey website to learn more about refreeing skills and how you can improve if you are already an refree</p>
           <a href="https://alliancehockey.com/">Alliance Hockey</a>
         </section>
         <img src="../images/thumbnail_IMG_9388.jpg" alt="img">
     </section>
     
-     <section class="desp2">
+     <section class="despskill2">
         <section class='content'>
          <h2>Refree's Cease Documents</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          ntur?</p>
+          <p>Documentation is a must and one of the prime principles we follow as it can get messy without proper documents. Everything and every event is recorded so that it can be referred back</p>
         </section>
         <img src="../images/thumbnail_IMG_9506.jpg" alt="img">
     </section>
@@ -71,6 +73,7 @@
 
  </section>
 </body>
+<script src="../js/menu.js"></script>
 
 <footer>
 <section class="footerNav">

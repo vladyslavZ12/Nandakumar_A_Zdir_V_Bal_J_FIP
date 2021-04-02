@@ -3,11 +3,12 @@
     function login($username, $password, $ip)
     {
         $pdo = Database::getInstance()->getConnection();
-        $get_user_query = 'SELECT * FROM tbl_user WHERE user_name = :username';
+        $get_user_query = 'SELECT * FROM tbl_user WHERE user_name = :username AND user_pass = :password';
         $user_set = $pdo->prepare($get_user_query);
         $user_set->execute(
             array(
          ':username'=>$username,
+         ':password'=>$password
         )
         );
 
@@ -16,7 +17,7 @@
             if ($isPasswordMatched) {
                 $found_user_id = $found_user['user_id'];
                 $_SESSION['user_id'] = $found_user_id;
-                $_SESSION['user_name'] = $found_user['user_fname'];
+                $_SESSION['user_name'] = $found_user['user_name'];
                 $_SESSION['user_level'] = $found_user['user_level'];
 
                 $update_user_query = 'UPDATE tbl_user SET user_ip=:user_ip WHERE user_id=:user_id';

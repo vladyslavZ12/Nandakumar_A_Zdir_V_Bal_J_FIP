@@ -30,6 +30,7 @@
     .Set1 p {
         width: 300px;
         font-size: 12px;
+        margin-top: 0px;
         text-align: center;
     }
 
@@ -44,16 +45,20 @@
     .detailsSection {
         display: flex;
         margin: auto;
+        padding-top: 20px;
     }
 
     .detail1 {
         display: flex;
-        flex-direction: column-reverse;margin: auto;
+        flex-direction: column-reverse;
+        margin: auto;
+        text-align: center;
     }
     .detail2 {
         display: flex;
         flex-direction: column-reverse;
         margin: auto;
+        text-align: center;
     }
     // HOME PAGE QUERIES ENDS
 
@@ -103,7 +108,8 @@
     .desp1 {
         display: flex;
         flex-direction: column;
-    p{
+        
+        p{
         text-align: center;
         font-size: 14px;
     }
@@ -115,6 +121,24 @@ img {
     height: 267px;
 }
     }
+
+    .despmem1 {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        margin: auto;
+        padding-top: 30px;
+    }
+
+    
+    .despmem2 {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        margin: auto;
+        padding-top: 30px;
+    }
+
     
     //ABOUT US PAGE QUERIES ENDS
 
@@ -171,6 +195,23 @@ img {
         }
     }
 
+    .despskill2 {
+        display: flex;
+        flex-direction: column;
+        h2 {
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+        a{
+            margin: auto;
+        }
+        img {
+            width: 400px;
+            height: 267px;
+        }
+    }
     .desp2 {
         display: flex;
         flex-direction: column;
@@ -260,16 +301,25 @@ img {
 .despcommittee1 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    img {
+        width: 400px;
+
+        margin: auto;
+    }
 }
 
 
 .despcommittee2 {
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 .despcommittee2 img {
     width: 400px;
+    margin: auto;
 }
 
 //COMMITTEE PAGE QUERIES ENDS 
@@ -322,7 +372,7 @@ img {
         margin-top: 30px;
         text-align: center;
         img {
-            margin: auto;
+            margin-right: auto;
         }
         }
 //PROGRAM PAGE QUERY ENDS
@@ -363,22 +413,28 @@ img {
 .Set1 img {
     width: 300px;
 }
-
+.Set1 h2{
+margin: auto;
+margin-top: 10px;
+}
 .Set1 p {
     font-size: 14px;
 }
 .detail1 {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    text-align: left;
     margin: 0;
+    p{
+        width: 100%;
+    }
 }
 
 
 .detail2 {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-around;
+    text-align: left;
     margin: 0;
 }
 // HOME PAGE QUERIES ENDS
@@ -468,11 +524,10 @@ h3 {
         
     p,h2{
         width: 50%;
-        margin-right: 250px;
+        margin-left: 100px;
     }
 
     img {
-        margin: auto;
         margin-left: 250px;
     }
         }
@@ -488,6 +543,39 @@ h3 {
 }
 
 
+.despmem1 {
+    display: flex;
+    text-align: left;
+    p{
+        width: 70%;
+    }
+    img {
+        margin-right: 200px;
+    }
+    .content {
+        margin-left: 300px;
+    }
+    flex-direction: row;
+    margin: auto;
+}
+
+
+
+.despmem2 {
+    display: flex;
+    text-align: left;
+    flex-direction: row-reverse;
+    p{
+        width: 70%;
+    }
+    img {
+        margin-left: 300px;
+    }
+    .content {
+        margin-left: 200px;
+    }
+    margin: auto;
+}
 // MEMBERSHIP PAGE QUERIES ENDS
  // ABOUT US PAGE QUERY
  .desp1 {
@@ -544,15 +632,42 @@ img {
     .despskill1 {
         display: flex;
         flex-direction: row;
+        .content {
+            margin-left: 200px;
+        }
         h2 {
             text-align: left;
         }
         p{
             text-align: left;
-            margin-right: 100px;
+            
+            width: 70%;
         }
         img {
             width: 400px;
+            margin-right: 100px;
+            height: 267px;
+        }
+    }
+
+    
+    .despskill2 {
+        display: flex;
+        flex-direction: row-reverse;
+        .content {
+            margin-left: 200px;
+        }
+        h2 {
+            text-align: left;
+        }
+        p{
+            text-align: left;
+            
+            width: 70%;
+        }
+        img {
+            width: 400px;
+            margin-left: 350px;
             height: 267px;
         }
     }
@@ -571,6 +686,7 @@ img {
         }
         p{
             text-align: left;
+            width: 70%;
         }
     }
     //SKILL PAGE QUERIES ENDS
@@ -649,23 +765,28 @@ img {
 .despcommittee1 {
     display: flex;
     flex-direction: row;
+    text-align: left;
+    p{
+        width: 90%;
+        flex-direction: flex-end;
+    }
 }
 
 
 .despcommittee2 {
     display: flex;
     flex-direction: row-reverse;
+    text-align: left;
+    p{
+        width: 70%;
+        flex-wrap: wrap;
+    }
+
+    img {
+        margin-right: 40px;
+    }
 }
 
-.despcommittee2 img {
-    width: 400px;
-    margin-right: 100px;
-}
-
-.despcommittee1 img {
-    width: 400px;
-    margin-left: 100px;
-}
 //COMMITTEE PAGE QUERIES ENDS 
 
 //CERTIFICATION PAGE QUERY

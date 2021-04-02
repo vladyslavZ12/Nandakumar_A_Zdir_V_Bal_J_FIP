@@ -15,6 +15,9 @@
 </section>
 
 <div class='nav'>
+   <nav>
+      <button id="button"></button>
+      <div id="burgerCon">
 <a href="index.php">Home</a>
 <div class="dropdown">
   <button class="dropbtn">Membership</button>
@@ -29,13 +32,15 @@
 </div>
 <a href="partners.php">Partners</a>
 <a href="#">Programs</a>
-<a href="contact.php">Contact</a><div class="dropdown">
+<a href="contact.php">Contact</a>
+<div class="dropdown">
   <button class="dropbtn">About us</button>
   <div class="dropdown-content">
     <a href="about_us.php">Who are we</a>
     <a href="vm.php">Vision & mission</a>
   </div>
 </div>
+</nav>
 </div>
 </header>    
 <body>
@@ -71,8 +76,7 @@ officials. The on-ice mentorship and off-ice guidance brings practical and class
      <section class="despprograms2">
         <section class='content'>
          <h2>Timeline for joining</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          ntur?</p>
+          <p>Intake for this refrees group happens around January and September. People who are eligible can join the group by this time</p>
         </section>
         <img src="../images/thumbnail_IMG_0899.jpg" alt="img">
     </section>
@@ -80,7 +84,7 @@ officials. The on-ice mentorship and off-ice guidance brings practical and class
     <section class="despprograms1">
         <section class='content'>
          <h2>Progression</h2>
-          <p>lorem </p>
+          <p>Making progress in this group comes with benefits such as more matches and additional pay. If you want more, then grab that chance</p>
 
           </section>
 
@@ -138,6 +142,7 @@ officials. The on-ice mentorship and off-ice guidance brings practical and class
 
 
 </body>
+<script src="../js/menu.js"></script>
 
 
 <footer>

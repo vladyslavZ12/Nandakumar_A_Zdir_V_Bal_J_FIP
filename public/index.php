@@ -39,8 +39,8 @@
     <a href="about_us.php">Who are we</a>
     <a href="vm.php">Vision & mission</a>
   </div>
-  </div>
-  </nav>
+</div>
+</nav>
 </div>
 </header>    
 <body>
@@ -55,20 +55,20 @@
     <section class="subCategory">
         <section class="Set1">
         <img src="../images/home_line1.jpg" class="shadow"  alt="image">
-        <p>Lorem ipsum dolor sit amet, 
-        consectetur adipisicing elit. Offici</p>
+        <h2>Who are we</h2>
+        <p>We are London Referees Group (LRG)</p>
         </section>
         
         <section class="Set1">
         <img src="../images/home_line2.jpg" class="shadow" alt="image">
-        <p>Lorem ipsum dolor sit amet, 
-        consectetur adipisicing elit. Offici</p>
+        <h2>Services we provide</h2>
+        <p>We provide you the opportunity to be the one who can look after matches being in the field</p>
         </section>
         
         <section class="Set1">
         <img src="../images/home_line3.jpg" class="shadow" alt="image">
-        <p>Lorem ipsum dolor sit amet, 
-        consectetur adipisicing elit. Offici</p>
+        <h2>More about us</h2>
+        <p>Interested, get to know more about us by <a href="about_us.php">Clicking Here</a></p>
         </section>
     </section>
 
@@ -76,7 +76,7 @@
         <section class="detail1">
              <section class="detailText">
                 <h2>Role of refree</h2>
-                <p>again lorem ipsum here</p>
+                <p>The main role and goal of our referees to make your hockey tournament fully regulated according to all the rules. Do everything on the highest level.</p>
 
              </section>
              <section class="detailsImages">
@@ -87,7 +87,7 @@
         <section class="detail2">
              <section class="detailText">
                 <h2>The training involved</h2>
-                <p>again lorem ipsum here</p>
+                <p>All referees are trained and prepared. If you are a referee full training is conducted by professionals</p>
 
              </section>
              <section class="detailsImages">
@@ -98,7 +98,7 @@
         <section class="detail1">
              <section class="detailText">
                 <h2>Certificates</h2>
-                <p>again lorem ipsum here</p>
+                <p>All the referees are Certified and ready to work both with professionals and people who are new in hockey.</p>
 
              </section>
              <section class="detailsImages">
@@ -109,7 +109,7 @@
         <section class="detail2">
              <section class="detailText">
                 <h2>Commitment</h2>
-                <p>again lorem ipsum here</p>
+                <p>All responsibilities are highly controlled to prevent any difficulties and dangerous situations.</p>
 
              </section>
              <section class="detailsImages">
@@ -120,7 +120,7 @@
         <section class="detail1">
              <section class="detailText">
                 <h2>Communication skills</h2>
-                <p>again lorem ipsum here</p>
+                <p>Referees are trained to be more expressive and social as they are required to communicate with the players clearly</p>
 
              </section>
              <section class="detailsImages">
@@ -131,7 +131,7 @@
         <section class="detail2">
              <section class="detailText">
                 <h2>Social intelligence skills</h2>
-                <p>again lorem ipsum here</p>
+                <p>All referees are not only professionals but real psychologists will high social intelligence skills.</p>
 
              </section>
              <section class="detailsImages">
