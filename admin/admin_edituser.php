@@ -1,6 +1,6 @@
 <?php
 require_once '../load.php';
-confirm_logged_in();
+// confirm_logged_in();
 
 $id = $_SESSION['user_id'];
 $current_user = getSingleUser($id);

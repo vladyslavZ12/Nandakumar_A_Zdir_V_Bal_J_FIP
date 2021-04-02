@@ -1,7 +1,7 @@
 <?php
 require_once '../load.php';
 
-confirm_logged_in(true);
+// confirm_logged_in(true);
 
 $password = passwordGenerator();
 $hashPassword = password_hash($password, PASSWORD_DEFAULT, ['cost' => 6]);
@@ -31,11 +31,12 @@ if (isset($_POST['submit'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create User</title>
-      <link rel="stylesheet" href="main.css">    
+      <link rel="stylesheet" href="sub.css">    
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 </head>
 <body>
+    <section class="userForm">
 <h2>Create User</h2>
 <?php echo !empty($message)?$message:''; ?>
 <form action="admin_createuser.php" method="post">
@@ -43,7 +44,7 @@ if (isset($_POST['submit'])) {
 <input type="text" name="fname" value="" id="first_name">
 
 
-<label for="username">UserName</label>
+<label for="username">Username</label>
 <input type="text" name="username" value="" id="username">
 
 
@@ -65,6 +66,6 @@ foreach ($user_level_map as $val => $label):?>
 </form>
 
 <a href="index.php">Back to dashboard</a>
-
+</section>
 </body>
 </html>
