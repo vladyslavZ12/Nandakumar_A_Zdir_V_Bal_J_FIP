@@ -35,8 +35,8 @@ iframe {
 .nav #button {
   background: url(../images/burger_menu.svg) center no-repeat;
   border: 0px;
-  width: 40px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   transition: all 400ms ease;
 }
 
@@ -54,7 +54,7 @@ iframe {
   width: 100%;
   height: 60px;
   display: flex;
-  background-color: #064211;
+  background-color: #FF0000;
   margin-top: 35px;
   color: white;
   box-shadow: 0px 27px 43px 6px rgba(0, 0, 0, 0.42);
@@ -73,7 +73,7 @@ h1 {
 h2 {
   font-size: 16px;
   font-weight: bold;
-  color: #064211;
+  color: #FF0000;
   font-family: "Quicksand", Arial, Helvetica, sans-serif;
 }
 
@@ -212,7 +212,6 @@ input {
   display: flex;
   margin-left: 10px;
   margin-top: 20px;
-  border: 5px solid #064211;
 }
 
 .formSection3 {
@@ -255,7 +254,7 @@ input {
   margin: auto;
   color: white;
   border-radius: 5px;
-  background-color: #064211;
+  background-color: #FF0000;
   box-shadow: 0px -1px 16px 0px rgba(0, 0, 0, 0.51);
   -webkit-box-shadow: 0px -1px 16px 0px rgba(0, 0, 0, 0.51);
   -moz-box-shadow: 0px -1px 16px 0px rgba(0, 0, 0, 0.51);
@@ -273,6 +272,13 @@ input {
   margin: auto;
   flex-direction: row;
   margin-top: 60px;
+}
+
+.despmem1 {
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  margin-top: 50px;
 }
 
 .despprograms1 {
@@ -307,7 +313,14 @@ input {
   margin-top: 80px;
 }
 
-.desp2 {
+.desp2, .despskill2 {
+  display: flex;
+  margin: auto;
+  flex-direction: row-reverse;
+  margin-top: 60px;
+}
+
+.despmem2 {
   display: flex;
   margin: auto;
   flex-direction: row-reverse;
@@ -456,7 +469,7 @@ input {
 .addressArea h2 {
   font-size: 16px;
   font-weight: bold;
-  color: #064211;
+  color: #FF0000;
   font-family: "Quicksand", Arial, Helvetica, sans-serif;
 }
 
@@ -553,6 +566,7 @@ input {
   .Set1 p {
     width: 300px;
     font-size: 12px;
+    margin-top: 0px;
     text-align: center;
   }
 
@@ -567,18 +581,21 @@ input {
   .detailsSection {
     display: flex;
     margin: auto;
+    padding-top: 20px;
   }
 
   .detail1 {
     display: flex;
     flex-direction: column-reverse;
     margin: auto;
+    text-align: center;
   }
 
   .detail2 {
     display: flex;
     flex-direction: column-reverse;
     margin: auto;
+    text-align: center;
   }
 
   .contactArea {
@@ -630,6 +647,22 @@ input {
     height: 267px;
   }
 
+  .despmem1 {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 30px;
+  }
+
+  .despmem2 {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 30px;
+  }
+
   .despvm1 {
     display: flex;
     flex-direction: column;
@@ -667,6 +700,24 @@ input {
     margin: auto;
   }
   .despskill1 img {
+    width: 400px;
+    height: 267px;
+  }
+
+  .despskill2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .despskill2 h2 {
+    text-align: center;
+  }
+  .despskill2 p {
+    text-align: center;
+  }
+  .despskill2 a {
+    margin: auto;
+  }
+  .despskill2 img {
     width: 400px;
     height: 267px;
   }
@@ -749,15 +800,23 @@ input {
   .despcommittee1 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .despcommittee1 img {
+    width: 400px;
+    margin: auto;
   }
 
   .despcommittee2 {
     display: flex;
     flex-direction: column;
+    text-align: center;
   }
 
   .despcommittee2 img {
     width: 400px;
+    margin: auto;
   }
 
   .despcertification1 {
@@ -800,7 +859,7 @@ input {
     text-align: center;
   }
   .despprograms2 img {
-    margin: auto;
+    margin-right: auto;
   }
 }
 @media (min-width: 1000px) {
@@ -838,6 +897,11 @@ input {
     width: 300px;
   }
 
+  .Set1 h2 {
+    margin: auto;
+    margin-top: 10px;
+  }
+
   .Set1 p {
     font-size: 14px;
   }
@@ -845,14 +909,17 @@ input {
   .detail1 {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    text-align: left;
     margin: 0;
+  }
+  .detail1 p {
+    width: 100%;
   }
 
   .detail2 {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-around;
+    text-align: left;
     margin: 0;
   }
 
@@ -926,10 +993,9 @@ input {
   }
   .despprograms2 p, .despprograms2 h2 {
     width: 50%;
-    margin-right: 250px;
+    margin-left: 100px;
   }
   .despprograms2 img {
-    margin: auto;
     margin-left: 250px;
   }
 
@@ -938,6 +1004,38 @@ input {
     margin: auto;
     justify-content: center;
     margin-top: 40px;
+  }
+
+  .despmem1 {
+    display: flex;
+    text-align: left;
+    flex-direction: row;
+    margin: auto;
+  }
+  .despmem1 p {
+    width: 70%;
+  }
+  .despmem1 img {
+    margin-right: 200px;
+  }
+  .despmem1 .content {
+    margin-left: 300px;
+  }
+
+  .despmem2 {
+    display: flex;
+    text-align: left;
+    flex-direction: row-reverse;
+    margin: auto;
+  }
+  .despmem2 p {
+    width: 70%;
+  }
+  .despmem2 img {
+    margin-left: 300px;
+  }
+  .despmem2 .content {
+    margin-left: 200px;
   }
 
   .desp1 {
@@ -985,15 +1083,39 @@ input {
     display: flex;
     flex-direction: row;
   }
+  .despskill1 .content {
+    margin-left: 200px;
+  }
   .despskill1 h2 {
     text-align: left;
   }
   .despskill1 p {
     text-align: left;
-    margin-right: 100px;
+    width: 70%;
   }
   .despskill1 img {
     width: 400px;
+    margin-right: 100px;
+    height: 267px;
+  }
+
+  .despskill2 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .despskill2 .content {
+    margin-left: 200px;
+  }
+  .despskill2 h2 {
+    text-align: left;
+  }
+  .despskill2 p {
+    text-align: left;
+    width: 70%;
+  }
+  .despskill2 img {
+    width: 400px;
+    margin-left: 350px;
     height: 267px;
   }
 
@@ -1012,6 +1134,7 @@ input {
   }
   .desp2 p {
     text-align: left;
+    width: 70%;
   }
 
   .formContainer {
@@ -1078,21 +1201,24 @@ input {
   .despcommittee1 {
     display: flex;
     flex-direction: row;
+    text-align: left;
+  }
+  .despcommittee1 p {
+    width: 90%;
+    flex-direction: flex-end;
   }
 
   .despcommittee2 {
     display: flex;
     flex-direction: row-reverse;
+    text-align: left;
   }
-
+  .despcommittee2 p {
+    width: 70%;
+    flex-wrap: wrap;
+  }
   .despcommittee2 img {
-    width: 400px;
-    margin-right: 100px;
-  }
-
-  .despcommittee1 img {
-    width: 400px;
-    margin-left: 100px;
+    margin-right: 40px;
   }
 
   .despcertification1 {

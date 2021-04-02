@@ -19,6 +19,9 @@
 </section>
 
 <div class='nav'>
+   <nav>
+      <button id="button"></button>
+      <div id="burgerCon">
 <a href="index.php">Home</a>
 <div class="dropdown">
   <button class="dropbtn">Membership</button>
@@ -41,6 +44,7 @@
     <a href="vm.php">Vision & mission</a>
   </div>
 </div>
+</nav>
 </div>
 </header>    
 <body>
@@ -55,6 +59,7 @@
 </section>
 </main>
 
+<script src="../js/menu.js"></script>
 
 <footer>
 <section class="footerNav">

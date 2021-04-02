@@ -15,6 +15,9 @@
 </section>
 
 <div class='nav'>
+   <nav>
+      <button id="button"></button>
+      <div id="burgerCon">
 <a href="index.php">Home</a>
 <div class="dropdown">
   <button class="dropbtn">Membership</button>
@@ -37,6 +40,7 @@
     <a href="vm.php">Vision & mission</a>
   </div>
 </div>
+</nav>
 </div>
 </header>    
 <body>
@@ -45,20 +49,18 @@
 <h1>Current Membership</h1>
 </section>
  <section class="currentMembershipDescription">
-    <section class="desp1">
+    <section class="despmem1">
         <section class='content'>
          <h2>Reminders</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          ntur?</p>
+          <p>We all work with a busy schedule and tend to forget even some of our important works. You don't have to worry about that in LRG as we will be sending out reminders to ur personal account so you would be aware of upcoming matches </p>
         </section>
         <img src="../images/thumbnail_IMG_0947.jpg" alt="">
     </section>
 
 
-    <section class="desp2">
+    <section class="despmem2">
         <section class='content'>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          ntur?</p>
+          <p>We send out announcements, reminders of your upcoming works. You are just required to login into your account and check reminders so you won't miss any </p>
         </section>
         <img src="../images/thumbnail_IMG_0996.jpg" alt="">
     </section>
@@ -66,14 +68,14 @@
 <section class="despmembership1">
         <section class='content'>
         <h2>Schedule</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          ntur?</p>
+        <a href=""> <p>Click here to check schedule</p></a>
           
         <img src="../images/thumbnail_IMG_1010.jpg" alt="">
         </section>
         </section>
  </section>
 </body>
+<script src="../js/menu.js"></script>
 
 <footer>
 <section class="footerNav">

@@ -15,11 +15,14 @@
 </section>
 
 <div class='nav'>
+<nav>
+<button id="button"></button>
+      <div id="burgerCon">
 <a href="index.php">Home</a>
 <div class="dropdown">
   <button class="dropbtn">Membership</button>
   <div class="dropdown-content">
-    <a href="#">Current Membership</a>
+    <a href="membership.php">Current Membership</a>
     <a href="joinUs.php">Join us</a>
     <a href="committee.php">Committee</a>
     <a href="certification.php">Certification</a>
@@ -38,6 +41,7 @@
     <a href="#">Vision & mission</a>
   </div>
 </div>
+</nav>
 </div>
 </header>    
 <body>
@@ -70,6 +74,7 @@ associations, and members of the community.</p>
 </section>
 
 </body>
+<script src="../js/menu.js"></script>
 
 <footer>
 <section class="footerNav">

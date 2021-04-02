@@ -15,13 +15,14 @@
 </section>
 
 <div class='nav'>
-  <button id="button"></button>
-  <div id="burgerCon">
+   <nav>
+      <button id="button"></button>
+      <div id="burgerCon">
 <a href="index.php">Home</a>
 <div class="dropdown">
   <button class="dropbtn">Membership</button>
   <div class="dropdown-content">
-    <a href="#">Current Membership</a>
+    <a href="membership.php">Current Membership</a>
     <a href="joinUs.php">Join us</a>
     <a href="committee.php">Committee</a>
     <a href="certification.php">Certification</a>
@@ -31,7 +32,7 @@
 </div>
 <a href="partners.php">Partners</a>
 <a href="programs.php">Programs</a>
-<a href="contact.php">Contact</a>
+<a href="#">Contact</a>
 <div class="dropdown">
   <button class="dropbtn">About us</button>
   <div class="dropdown-content">
@@ -39,7 +40,7 @@
     <a href="vm.php">Vision & mission</a>
   </div>
 </div>
-</div>
+</nav>
 </div>
 </header>    
 <body>
@@ -79,6 +80,7 @@
 
 </body>
 
+<script src="../js/menu.js"></script>
 <footer>
 <section class="footerNav">
     

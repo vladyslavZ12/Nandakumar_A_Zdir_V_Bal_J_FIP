@@ -15,8 +15,9 @@
 </section>
 
 <div class='nav'>
-  <button id="button"></button>
-  <div id="burgerCon">
+   <nav>
+      <button id="button"></button>
+      <div id="burgerCon">
 <a href="index.php">Home</a>
 <div class="dropdown">
   <button class="dropbtn">Membership</button>
@@ -32,7 +33,6 @@
 <a href="partners.php">Partners</a>
 <a href="programs.php">Programs</a>
 <a href="contact.php">Contact</a>
-
 <div class="dropdown">
   <button class="dropbtn">About us</button>
   <div class="dropdown-content">
@@ -40,7 +40,7 @@
     <a href="vm.php">Vision & mission</a>
   </div>
 </div>
-</div>
+</nav>
 </div>
 </header>    
 <body>
@@ -85,6 +85,7 @@ advocate for a stronger understanding for the role of the on-ice officials and t
 <img src="../images/thumbnail_IMG_9609.jpg" alt="img">
 </section>
 </body>
+<script src="../js/menu.js"></script>
 
 <footer>
 <section class="footerNav">
