@@ -1,6 +1,6 @@
 <?php
  require_once '../load.php';
- confirm_logged_in(true);
+//  confirm_logged_in(true);
 if(isset($_GET['id'])){
     $delete_user_id = $_GET['id'];
 
