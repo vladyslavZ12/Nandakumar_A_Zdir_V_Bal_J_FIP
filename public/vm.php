@@ -82,9 +82,9 @@ associations, and members of the community.</p>
      <section class="Copyright">Copyright</section>
      <section class="socialMedia">
     <a href=""><img src="../images/facebook.svg"   width = "30px" height = "30px" alt=""></a>
-    <a href=""><img src="../images/twitter.svg"   width = "30px" height = "30px" alt=""></a>
+    <a href="https://twitter.com/groupreferees/status/1365040086040129541?s=21"><img src="../images/twitter.svg"   width = "30px" height = "30px" alt=""></a>
     <a href=""><img src="../images/youtube.svg"   width = "30px" height = "30px" alt=""></a>
-    <a href=""><img src="../images/instagram.svg"  width = "30px" height = "30px" alt=""></a>
+    <a href="https://instagram.com/london_referees_group?igshid=n3lnrn7rkm5g"><img src="../images/instagram.svg"  width = "30px" height = "30px" alt=""></a>
     
      </section>
 
