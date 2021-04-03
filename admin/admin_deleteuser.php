@@ -25,9 +25,14 @@ if(isset($_GET['id'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="sub.css">    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
     <title>Delete User</title>
 </head>
 <body>
+    <section class="DeleteContent">
     <h2>Delete User</h2>
     <?php echo !empty($message) ? $message : ''; ?>
 <a href="index.php">Back to Dashboard page</a>
@@ -53,5 +58,6 @@ if(isset($_GET['id'])){
             <?php endwhile; ?>
         </tbody>
     </table>
+    </section>
 </body>
 </html>
