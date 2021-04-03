@@ -29,14 +29,15 @@ if (isset($_POST['submit'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">    
+    <link rel="stylesheet" href="sub.css">    
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <title>Edit user</title>
 </head>
 <body>
+    <section class="editCon">
     <h2>Edit user</h2>
-
+<section class="userForm"> 
     <?php echo !empty($message) ? $message:'';?>
     <?php if (!empty($current_user)): ?>
     <form action="admin_edituser.php" method="post">
@@ -74,8 +75,8 @@ if (isset($_POST['submit'])) {
  </form>
 
  <?php endif;?>
-
+ </section>
  <a href="index.php">Back to dashboard</a>
- 
+ </section>
 </body>
 </html>
