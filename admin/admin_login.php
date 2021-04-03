@@ -1,7 +1,5 @@
 <?php 
 require_once '../load.php';
-echo '<link rel="stylesheet" href="main.css">';
-echo '<div class="errortext">';
 $ip = $_SERVER['REMOTE_ADDR'];
 
 if(isset($_SESSION['user_id'])){
@@ -17,11 +15,11 @@ if(isset($_POST['submit'])){
         $message = $result;
     }
     else {
-        echo '<p id="errormessage">Please fill up the form</p>';
+        echo 'Please fill up the form';
     }
 
 }
-echo '</div>';
+
 ?>
 
 
