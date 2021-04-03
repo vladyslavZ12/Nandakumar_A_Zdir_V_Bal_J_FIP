@@ -8,34 +8,29 @@
         $user_set->execute(
             array(
          ':username'=>$username,
-         ':password'=>$password
+         ':password'=>$password,
+         
         )
         );
+        if($found_user = $user_set->fetch(PDO::FETCH_ASSOC)){
+            $found_user_id = $found_user['user_id'];
+            $_SESSION['user_id'] = $found_user_id;
+            $_SESSION['user_name'] = $found_user['user_name'];
+            $_SESSION['user_level'] = $found_user['user_level'];
 
-        if ($found_user = $user_set->fetch(PDO::FETCH_ASSOC)) {
-            $isPasswordMatched = verifyPassword($password, $found_user['user_pass']);
-            if ($isPasswordMatched) {
-                $found_user_id = $found_user['user_id'];
-                $_SESSION['user_id'] = $found_user_id;
-                $_SESSION['user_name'] = $found_user['user_name'];
-                $_SESSION['user_level'] = $found_user['user_level'];
-
-                $update_user_query = 'UPDATE tbl_user SET user_ip=:user_ip WHERE user_id=:user_id';
-                $update_user_set = $pdo->prepare($update_user_query);
-                $update_user_set->execute(
-                    array(
+            $update_user_query = 'UPDATE tbl_user SET user_ip=:user_ip WHERE user_id=:user_id';
+            $update_user_set = $pdo->prepare($update_user_query);
+            $update_user_set->execute(
+                array(
                 ':user_ip'=>$ip,
                 ':user_id'=>$found_user_id
                 )
-                );
+            );
 
-                redirect_to('index.php');
-                return 'we are logging in';
-            } else {
-                return 'Wrong password';
-            }
-        } else {
-            return 'Wrong username';
+            redirect_to('index.php');
+            return 'we are logging in';
+        }else{
+            return 'Wrong username or password, try again';
         }
     }
     function confirm_logged_in($admin_above_only=false)

@@ -36,6 +36,7 @@ if(isset($_GET['id'])){
     <h2>Delete User</h2>
     <?php echo !empty($message) ? $message : ''; ?>
 <a href="index.php">Back to Dashboard page</a>
+<section class="table">
     <table>
         <thead>
             <tr>
@@ -58,6 +59,7 @@ if(isset($_GET['id'])){
             <?php endwhile; ?>
         </tbody>
     </table>
+    </section>
     </section>
 </body>
 </html>

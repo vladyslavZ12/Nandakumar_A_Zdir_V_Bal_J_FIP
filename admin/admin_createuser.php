@@ -36,8 +36,9 @@ if (isset($_POST['submit'])) {
 <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="userForm">
+    <section class="editCon">
 <h2>Create User</h2>
+    <section class="userForm">
 <?php echo !empty($message)?$message:''; ?>
 <form action="admin_createuser.php" method="post">
 <label>First Name</label>
@@ -65,6 +66,7 @@ foreach ($user_level_map as $val => $label):?>
 
 </form>
 
+</section>
 <a href="index.php">Back to dashboard</a>
 </section>
 </body>

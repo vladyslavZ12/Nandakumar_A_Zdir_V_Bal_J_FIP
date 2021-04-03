@@ -8,8 +8,12 @@ body {
 .options {
     display: flex;
     margin: auto;
-    margin-top: 275px;
     justify-content: space-evenly;
+}
+
+.options2 {
+    display: flex;
+    flex-direction: row;
 }
 
 .clickableimages img{
@@ -31,6 +35,12 @@ body {
     display: flex;
     justify-content: center;
     margin-left: auto;
+    
+}
+
+.editCon h2,a{
+    display: flex;
+    justify-content: center;
 }
 
 form {
@@ -76,7 +86,6 @@ form {
     margin-top: 10px;
     font-family: "Quicksand", Arial, sans-serif;
   }
-  
   #user_level {
       width: 100px;border: 1px solid grey;
       height: 25px;
@@ -106,9 +115,30 @@ form {
 
   .DeleteContent {
       display: flex;
-      margin: auto;
-
+      flex-direction: column;
   }
+
+.DeleteContent h2,a {
+    margin: auto;
+    margin-top: 40px;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 40px;
+
+justify-content: space-between;
+}
+
+th {
+    padding-left: 10px;
+}
+
+td {
+    padding-left: 15px;
+}
 
   button {
       border: 3px solid teal;
@@ -120,4 +150,9 @@ form {
       height: 30px;
       font-family: "Quicksand", Arial, sans-serif;
 
+  }
+
+  .options2 {
+      display: flex;
+      flex-direction: row;
   }
